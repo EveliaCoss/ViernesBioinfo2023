@@ -26,14 +26,25 @@ link.
 - Dra. Evelia Coss
 - Ing. Jair Santiago Garcia Sotelo
 - LCG. Sofia Salazar
+- M.C. Ana Hernandez
 
 ## Contenido
 
-- Viernes 1. Conceptos básicos de bioinformática y pseudocódigo (viernes 22/09/2023)
-- Viernes 2. Introducción a R
-- Viernes 3. Manipulación y limpieza de datos con dplyr y tidyr
-- Viernes 4. Visualización grafica con ggplot2
-- Viernes 5. Bioestadistica
-- Viernes 6. Buenas practias en bioinformatica 
+- Viernes 1. Conceptos básicos de bioinformática y pseudocódigo (22/sep/2023) - Dra. Evelia Coss
+- Viernes 2. Introducción a R (29/sep/2023) - LCG. Sofia Salazar
+- Viernes 3. Manipulación y limpieza de datos con dplyr y tidyr (06/oct/2023) - Dra. Evelia Coss
+- Viernes 4. Visualización grafica con ggplot2 (13/oct/2023)
+- Viernes 5. Bioestadistica (20/oct/2023) - Dr. Domingo Matinez
+- Viernes 6. Uso del cluster y tus primeros pasos en bash (27/oct/2023) - Ing. Jair Santiago Garcia Sotelo
+- Viernes 7. (27/oct/2023) - 
+- Viernes 8. (3/nov/2023) - 
+- Viernes 9. (10/nov/2023) -
+- Viernes 10. (17/nov/2023) - 
+- Viernes 11. (24/nov/2023) - 
+- Viernes 12. (1/dic/2023) -
+- Viernes 13. (8/dic/2023) - 
+- Viernes 14. (15/dic/2023) -
+
+Temas propuestos por confirmar: Machine Learning, pythn, shiny app, CV en R, postcard en R, pagina web en R.
 
 ## Material
