@@ -34,7 +34,7 @@ link.
 - Viernes 2. Introducción a R (29/sep/2023) - LCG. Sofia Salazar
 - Viernes 3. Manipulación y limpieza de datos con dplyr y tidyr (06/oct/2023) - Dra. Evelia Coss
 - Viernes 4. Visualización grafica con ggplot2 (13/oct/2023)
-- Viernes 5. Bioestadistica (20/oct/2023) - Dr. Domingo Matinez
+- Viernes 5. Exploracion de datos y eleccion de pruebas o modelos (20/oct/2023) - Dr. Domingo Matinez
 - Viernes 6. Uso del cluster y tus primeros pasos en bash (27/oct/2023) - Ing. Jair Santiago Garcia Sotelo
 - Viernes 7. (27/oct/2023) - 
 - Viernes 8. (3/nov/2023) - 
