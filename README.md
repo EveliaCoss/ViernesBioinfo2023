@@ -45,6 +45,6 @@ link.
 - Viernes 13. (8/dic/2023) - 
 - Viernes 14. (15/dic/2023) -
 
-Temas propuestos por confirmar: Machine Learning, pythn, shiny app, CV en R, postcard en R, pagina web en R.
+Temas propuestos por confirmar: Machine Learning, python, shiny app, CV en R, postcard en R, pagina web en R.
 
 ## Material
