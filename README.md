@@ -18,7 +18,7 @@ Este curso de contempla finalizar hasta diciembre de 2023.
 
 ## Inscripcion
 
-link. 
+Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0KvJMrEG_GkOhJ4lO99d2OGJaED1966GmPh27JpV5Vg/viewform
 
 ## Instructores
 
