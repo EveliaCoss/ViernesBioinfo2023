@@ -27,8 +27,8 @@ link.
 - Ing. Jair Santiago Garcia Sotelo
 - LCG. Sofia Salazar
 - M.C. Ana Hernandez
-- Fernanda Miron
-
+- LBT. Fernanda Miron
+- Jazmin
 
 
 ## Contenido
@@ -39,15 +39,15 @@ link.
 - Viernes 4. Visualización grafica con ggplot2 (13/oct/2023) - Fernanda Miron
 - Viernes 5. Exploracion de datos y eleccion de pruebas o modelos (20/oct/2023) - Dr. Domingo Matinez
 - Viernes 6. Uso del cluster y tus primeros pasos en bash (27/oct/2023) - Ing. Jair Santiago Garcia Sotelo
-- Viernes 7. (27/oct/2023) - 
-- Viernes 8. (3/nov/2023) - 
-- Viernes 9. (10/nov/2023) -
-- Viernes 10. (17/nov/2023) - 
-- Viernes 11. (24/nov/2023) - 
-- Viernes 12. (1/dic/2023) -
-- Viernes 13. (8/dic/2023) - 
-- Viernes 14. (15/dic/2023) -
+- Viernes 7. (3/nov/2023) - 
+- Viernes 8. (10/nov/2023) -
+- Sabado. Shiny app (11/nov/2023) - Jazmin (10am - 1pm)
+- Viernes 9. (17/nov/2023) - 
+- Viernes 10. (24/nov/2023) - 
+- Viernes 11. Llamado de variantes genticas, parte 1  (1/dic/2023) - M.C. Ana H 
+- Viernes 12. Llamado de variantes genticas, parte 2  (8/dic/2023) - M.C. Ana H  
+- Viernes 13. (15/dic/2023) -
 
-Temas propuestos por confirmar: Machine Learning, python, shiny app, CV en R, postcard en R, pagina web en R.
+Temas propuestos por confirmar: Machine Learning, python, CV en R, postcard en R, pagina web en R.
 
 ## Material
