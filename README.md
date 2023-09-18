@@ -28,7 +28,7 @@ link.
 - LCG. Sofia Salazar
 - M.C. Ana Hernandez
 - LBT. Fernanda Miron
-- Jazmin
+- Jazmin Lopez Chacon
 
 
 ## Contenido
