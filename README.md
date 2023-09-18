@@ -1,4 +1,4 @@
-# VieRnes de Biointomatica
+# VieRnes de Bioinformatica
 
 Primera edición 💜
 
