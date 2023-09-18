@@ -1,12 +1,12 @@
 # VieRnes de Biointomatica
 
-Primera edición
+Primera edición 💜
 
-**Objetivo**
+⭐ **Objetivo**
 
 Fomentar la formación y crecimiento en bioinformática a través de cursos gratuitos para toda la comunidad interesada.    
 
-## Informacion sobre horarios
+## Informacion sobre horarios 💻
 
 Viernes de 11 am a 1 pm, el horario puede variar unos dias dependiendo del instructor.
 
@@ -14,13 +14,15 @@ Inicio: 22 de septiembre de 11 am a 1 pm.
 
 Clases hibridas en el aula de Bioinformatica de LIIGH y Zoom.
 
+Intentaremos grabar las sesiones 📹.
+
 Este curso de contempla finalizar hasta diciembre de 2023.
 
 ## Inscripcion
 
 Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0KvJMrEG_GkOhJ4lO99d2OGJaED1966GmPh27JpV5Vg/viewform
 
-## Instructores
+## Instructores 👾 
 
 - Dr. Domingo Matinez
 - Dra. Evelia Coss
@@ -31,7 +33,7 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 - Jazmin Lopez Chacon
 
 
-## Contenido
+## Contenido 📌
 
 - Viernes 1. Conceptos básicos de bioinformática y pseudocódigo (22/sep/2023) - Dra. Evelia Coss
 - Viernes 2. Introducción a R (29/sep/2023) - LCG. Sofia Salazar
@@ -48,6 +50,20 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 - Viernes 12. Llamado de variantes genticas, parte 2  (8/dic/2023) - M.C. Ana H  
 - Viernes 13. (15/dic/2023) -
 
-Temas propuestos por confirmar: Machine Learning, python, CV en R, postcard en R, pagina web en R.
+Temas propuestos por confirmar: ♣️
+- Machine Learning
+- Programcion con python
+- CV en R
+- Postcard en Github con R
+- Pagina web en R. 
 
-## Material
+Cursos propuestos por los participantes: 
+
+- Procesamiento y analisis de datos de RNA-Seq (se necesitan 5 dias).
+- Loops y funciones en R
+- Procesamiento y analisis de datos de scRNA-Seq.
+
+## Material 📚
+
+
+Cursos hechos con amor 💜
