@@ -35,20 +35,21 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 
 ## Contenido 📌
 
-- Viernes 1. Conceptos básicos de bioinformática y pseudocódigo (22/sep/2023) - Dra. Evelia Coss
-- Viernes 2. Introducción a R (29/sep/2023) - LCG. Sofia Salazar
-- Viernes 3. Manipulación y limpieza de datos con dplyr y tidyr (06/oct/2023) - Dra. Evelia Coss
-- Viernes 4. Visualización grafica con ggplot2 (13/oct/2023) - Fernanda Miron
-- Viernes 5. Exploracion de datos y eleccion de pruebas o modelos (20/oct/2023) - Dr. Domingo Matinez
-- Viernes 6. Uso del cluster y tus primeros pasos en bash (27/oct/2023) - Ing. Jair Santiago Garcia Sotelo
-- Viernes 7. (3/nov/2023) - 
-- Viernes 8. (10/nov/2023) -
+- Viernes 1. [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1) (22/sep/2023) - Dra. Evelia Coss
+- Viernes 2. Introducción a R, parte 1 (29/sep/2023) - LCG. Sofia Salazar
+- Viernes 3. Introducción a R, parte 2 (06/oct/2023) - LCG. Sofia Salazar
+- Viernes 4. Manipulación y limpieza de datos con dplyr y tidyr (13/oct/2023) - Dra. Evelia Coss
+- Viernes 5. Visualización grafica con ggplot2 (20/oct/2023) - Fernanda Miron
+- Viernes 6. Exploracion de datos y eleccion de pruebas o modelos (27/oct/2023) - Dr. Domingo Matinez
+- Viernes 7. Uso del cluster y tus primeros pasos en bash (10/nov/2023) - Ing. Jair Santiago Garcia Sotelo
 - Sabado. Shiny app (11/nov/2023) - Jazmin (10am - 1pm)
-- Viernes 9. (17/nov/2023) - 
-- Viernes 10. (24/nov/2023) - 
-- Viernes 11. Llamado de variantes genticas, parte 1  (1/dic/2023) - M.C. Ana H 
-- Viernes 12. Llamado de variantes genticas, parte 2  (8/dic/2023) - M.C. Ana H  
-- Viernes 13. (15/dic/2023) -
+- Viernes 8. (17/nov/2023) - 
+- Viernes 9. (24/nov/2023) - 
+- Viernes 10. Llamado de variantes genticas, parte 1  (1/dic/2023) - M.C. Ana H 
+- Viernes 11. Llamado de variantes genticas, parte 2  (8/dic/2023) - M.C. Ana H  
+- Viernes 12. (15/dic/2023) -
+
+------
 
 Temas propuestos por confirmar: ♣️
 - Machine Learning
@@ -63,7 +64,6 @@ Cursos propuestos por los participantes:
 - Loops y funciones en R
 - Procesamiento y analisis de datos de scRNA-Seq.
 
-## Material 📚
-
+-------
 
 Cursos hechos con amor 💜
