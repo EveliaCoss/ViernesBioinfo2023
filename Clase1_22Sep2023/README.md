@@ -1,4 +1,4 @@
 # Conceptos básicos de bioinformática y pseudocódigo
 
-link de las diapositivas
+Presentación: https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1
 
