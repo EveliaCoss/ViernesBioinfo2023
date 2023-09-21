@@ -1,0 +1,652 @@
+---
+title: "Conceptos básicos de bioinformática y pseudocódigo"
+subtitle: "⚔<br/>Nivel básico"
+author: "Dra. Evelia Coss"
+institute: "VieRnes de Bioinformatica"
+date: "2023/09/22"
+output:
+  xaringan::moon_reader:
+    css: 
+      - xaringan-themer.css
+      - css/mi-tema.css
+      - default
+      - rladies
+      - rladies-fonts 
+    lib_dir: libs
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: googlecode
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+      beforeInit: "macros.js"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+
+---
+```{r setup, include = FALSE}
+# Setup chunk
+# Paquetes a usar
+#options(htmltools.dir.version = FALSE) cambia la forma de incluir código, los colores
+
+library(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons)
+library(fontawesome)
+library(emo)
+
+# set default options
+opts_chunk$set(collapse = TRUE,
+               dpi = 300,
+               warning = FALSE,
+               error = FALSE,
+               comment = "#")
+
+top_icon = function(x) {
+  icons::icon_style(
+    icons::fontawesome(x),
+    position = "fixed", top = 10, right = 10
+  )
+}
+
+knit_engines$set("yaml", "markdown")
+
+# Con la tecla "O" permite ver todas las diapositivas
+xaringanExtra::use_tile_view()
+# Agrega el boton de copiar los códigos de los chunks
+xaringanExtra::use_clipboard()
+
+# Crea paneles impresionantes 
+xaringanExtra::use_panelset()
+
+# Para compartir e incrustar en otro sitio web
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin")
+)
+
+# Funcionalidades de los chunks, pone un triangulito junto a la línea que se señala
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+
+# Agregar web cam
+
+xaringanExtra::use_webcam()
+```
+
+```{r xaringan-editable, echo=FALSE}
+# Para tener opciones para hacer editable algun chunk
+xaringanExtra::use_editable(expires = 1)
+# Para hacer que aparezca el lápiz y goma
+xaringanExtra::use_scribble()
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+# Establecer colores para el tema
+library(xaringanthemer)
+#style_mono_light(base_color = "#562457")
+```
+
+class: title-slide, middle, center
+background-image: url(imagenes/liigh_unam_logo.png) 
+background-position: 10% 50%
+background-size: 15%
+
+
+.center-column[
+# `r rmarkdown::metadata$title`
+### `r rmarkdown::metadata$subtitle`
+
+####`r rmarkdown::metadata$author` 
+#### `r rmarkdown::metadata$date`
+]
+
+.left[.footnote[R-Ladies Theme[R-Ladies Theme](https://www.apreshill.com/project/rladies-xaringan/)]]
+
+---
+background-image: url(imagenes/liigh_unam_logo.png) 
+background-position: 10% 10%
+background-size: 10%
+class: middle, center
+
+
+# Sobre mi
+----
+
+.left-col[
+
+### `r fontawesome::fa("dna", fill = "#181818")` Dra. Evelia Lorena Coss-Navarrete
+
+Investigadora Posdoctoral en el Laboratorio Internacional de Investigación sobre el Genoma Humano [(LIIGH), UNAM](https://twitter.com/LIIGH_UNAM), campus Juriquilla
+
+
+[`r fontawesome::fa("link")` Dra Alejandra Medina-Rivera](https://liigh.unam.mx/profile/dra-alejandra-medina-rivera/)
+
+[`r fontawesome::fa("github")` EveliaCoss.github.io](https://eveliacoss.github.io/)
+
+]
+
+
+.center-col[
+
+
+### `r fontawesome::fa("star", fill = "#181818")` Miembro
+
+- [LupusRGMX](https://twitter.com/LupusRgmx)
+
+- [Proyecto JAGUAR](https://twitter.com/PJaguarLATAM)
+
+- [Rladies Morelia](https://www.facebook.com/profile.php?id=100093337606435)
+
+- [CDSB - Mexico](https://twitter.com/CDSBMexico)
+
+- [RIABIO](https://twitter.com/RiaBioNet)
+]
+
+
+.right-col[
+
+### `r fontawesome::fa("circle-nodes", fill = "#181818")` Formación académica
+
+- Doctorado en Biotecnología de Plantas, [Cinvestav, Langebio](https://twitter.com/uga_langebio),  [`r fontawesome::fa("link")` Dra Selene Fernandez-Valverde](https://twitter.com/SelFdz)
+
+- Maestría en Biotecnología de Plantas, [Cinvestav, Unidad Irapuato](https://twitter.com/CinvestavIra)
+
+- Ing. en Biotecnología, [UPSIN](https://www.facebook.com/UPSINSINALOA)
+
+]
+
+---
+class: center, middle
+
+`r fontawesome::fa("laptop-file", height = "3em")`
+# Dia 1. Conceptos básicos de bioinformática y pseudocódigo
+
+---
+
+## Bioinformática se conforma de la computación, biológica, matemáticas y estadística
+
+
+La bioinformática, en relación con la **genética y la genómica**, es una **subdisciplina científica** que implica el uso de **ciencias informáticas** para *recopilar, almacenar, analizar, diseminar datos biológicos*, como secuencias de ADN y aminoácidos o anotaciones sobre esas secuencias [NIH, 2023](https://www.genome.gov/es/genetics-glossary/Bioinformatica). 
+
+Uno de sus objetivos es: **Aumentar el entendimiento de la salud y la enfermedad, en ciertos casos, se usan para proveer mejor atención médica** [NIH, 2023](https://www.genome.gov/es/genetics-glossary/Bioinformatica).
+
+.left[
+NIH: National Human Genome Research Institute
+]
+
+
+
+---
+
+## Ciencia de datos
+
+- La ciencia de datos se dedica al estudio de grandes **bases de datos** complejos que se amasan a través de múltiples proyectos de investigación (ejemplo: [gapminder](https://www.gapminder.org/), [BioProject](https://www.ncbi.nlm.nih.gov/bioproject/)). 
+
+- Tambien puede guiar en decisiones comerciales.
+
+- Con respecto a los estudios genómicos, ese trabajo requiere experiencia en disciplinas **científicas cuantitativas**, como *bioinformática, biología computacional y bioestadística*.
+
+.content-box-gray[
+Ejemplo: Certificado profesional de [Google Data Analytics](https://www.coursera.org/professional-certificates/google-data-analytics)
+]
+
+---
+
+## La bioinformática dentro de la genómica
+
+1) **Calidad de los datos**. Paso **FUNDAMENTAL**. Incluye la manipulación y limpieza. 
+
+2) **Análisis estadístico** 
+
+>EJEMPLO: Significancia estadística, significancia biológica, modelos estadísticos acorde al problema.
+
+3) **Generar interpretaciones de los experimentos.** Conocer el método empleado y los archivos de salida.
+
+> EJEMPLOS:
+> Con los datos de RNA-Seq estaremos analizando expresión de los genes.
+> Con datos de GWAS estaremos buscando variantes genéticas. 
+
+4) **Bioinformática predictiva** 
+
+>EJEMPLO: Predicciones de funciones, elementos genómicos, redes de co-expresión, etc
+
+---
+
+## Un algoritmo nos permite resolver un problema
+
+Un algoritmo es un método para resolver un problema mediante una serie de pasos **definidos, precisos** y **finitos**.
+
+- **Preciso**: implica el *orden* de realización de cada uno de los pasos.
+
+- **Definido**: si se sigue dos veces, se obtiene el mismo resultado. Es *reproducible*.
+
+- **Finito**: Tiene un numero determinado de pasos, implica que tiene un *fin*.
+
+Un algoritmo podemos definirlo como un programa. Ejemplo: Un **paquete** de instalacion en R es un programa.
+
+.content-box-gray[
+**EJEMPLO:**
+
+> **Problema:** No me gusta dedicarle tiempo a crear diapositivas bonitas. Me gusta mas enfocarme en el contenido. Entonces utilice el paquete [`r emo::ji("package")` Xaringan <img src="imagenes/hex-xaringan.png" width="25px"/>](https://github.com/yihui/xaringan#xaringan) para resolver mi problema. 
+
+> El paquete Xaringan es un algoritmo. Que me permitio resolver mi problema.
+
+]
+
+---
+
+## Pseudocódigo
+
+- El pseudocódigo es una manera de escribir algoritmos de forma *poco estricta* (con una sintaxis relajada) o estructura de *datos poco detalladas*. Intentando organizar los **pasos necesarios** para generar el algoritmo.
+
+- **Lenguaje sencillo y fácil de leer para las personas**.
+
+- Los pasos descritos **pueden posteriormente traducirse en algún lenguaje de programación**, con la ventaja de no estar regido por las normas de un lenguaje de programación en particular.
+
+- El pseudocódigo tambien va a utilizar una serie de *palabras claves* o palabras especies que va a indicarnos lo que significa el algoritmo.
+
+---
+
+## Importancia de aprender Pseudocódigo
+
+- **Es la base de cualquier lenguaje de programación**.
+
+- Si tu aprendes pseudocódigo puedes **escalar lo aprendido a TODOS los lenguajes de programación**.
+
+- Puedes usar el pseudocódigo para **encontrar ejemplos en internet para poder resolver tu problema**. 
+
+- En el mundo de la Bioinformática / programación vamos a emplear las palabras *Código o Script* para hacer referencia a un algoritmo.
+
+- **Mayor facilidad en la comprension del código o Script de los creadores de diversos paquetes (programas).**
+
+---
+
+## Pasos 
+
+.pull-left[
+1. Análisis del problema / Definir el problema 
+
+2. Diseño del algoritmo / Diseño del programa
+
+3. Codificación / Escribir el código
+
+4. Compilación y ejecución del programa
+
+5. Verificación / Realizar pruebas
+
+6. Depuración / Detectar los errores y corregirlos
+
+7. Documentación
+]
+
+.pull-right[
+<img src="img/homersapien.jpg"; width="500" height="300">
+]
+
+
+---
+
+## Paso 1: Análisis del problema / Definir el problema 
+
+.pull-left[
+> **Problema:** Realizar un algoritmo que solicite al usuario dos numeros enteros, realice su suma y la imprima en pantalla.
+
+]
+
+.pull-right[.center[
+<img src="img/Homero_inteligente.jpg"; width="500" height="300">
+]
+]
+
+---
+
+## Paso 2: Diseño del algoritmo / Diseño del programa
+
+- ¿Cuáles son las variables o datos necesarios para ejecutar el programa (*input*)?
+
+- ¿Qué es lo que tengo que hacer para resolver el problema?
+
+- ¿Cuáles son las variables o datos de salida (*output*)?
+
+.center[
+<img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2015/03/Homero-Simpson-predijo-la-masa-del-Boson-de-Higgs.jpg",width="500" height="400">
+]
+
+---
+
+## Ejercicio
+
+> **Problema:** Realizar un algoritmo que solicite al usuario dos numeros enteros, realice su suma y la imprima en pantalla.
+
+----
+
+```{r eval=FALSE}
+# ---Algoritmo(Sumar)---
+
+#- Input: Declarar variables (a y b). 
+#- Output: Resultado de la suma (variable c).
+
+#- Pasos:
+
+# --INICIO--
+
+# 1) Solicitar al usuario los datos de entrada.
+# 2) Realizar la suma de los datos de entrada.
+# 3) Mostrar el resultado.
+  
+# --FIN_INICIO--
+
+# --- Fin_de_Algoritmo(Sumar) ---
+```
+
+---
+
+## Ejercicio 
+
+> **Problema:** Realizar un algoritmo que solicite al usuario *dos numeros enteros*, realice su suma y la imprima en pantalla.
+
+----
+
+Traduccion a Pseudocódigo:
+
+```{r eval=FALSE}
+# ---Algoritmo(Sumar)---
+# 1) Solicitar al usuario los datos de entrada.
+
+# --INICIO--
+ESCRIBA("Digite el primer numero (entero)")
+Lea(a)
+ESCRIBA("Digite el segundo numero (entero)")
+Lea(b)
+
+# 2) Realizar la suma de los datos de entrada.
+c <- a + b
+
+# 3) Mostrar el resultado.
+ESCRIBA("La suma es:", c)
+
+# --FIN_INICIO--
+# --- Fin_de_Algoritmo(Sumar) ---
+```
+
+---
+
+## Diagramas de flujo
+
+Nos permiten ilustrar los pasos contenidos en un algoritmo.
+
+.left-col[
+<img src="img/DiagramaF1.png"; width="500" height="400"> 
+]
+
+.center-col[
+<img src="img/DiagramaF2.png"; width="500" height="400"> 
+
+]
+
+.right-col[
+<img src="img/DiagramaF3.png"; width="500" height="100"> 
+
+]
+
+Imagenes tomadas de [Lucidchart](https://www.lucidchart.com/pages/es/que-es-un-diagrama-de-flujo)
+
+Pueden generar sus diagramas en Powerpoint, [Canva](https://www.canva.com/graphs/workflow-diagrams/), en [R](https://hbiostat.org/rflow/doverview.html), [Lucidchart](https://www.lucidchart.com/pages/es/que-es-un-diagrama-de-flujo),  etc.
+
+---
+
+## Diagrama de flujo de la sumatoria
+
+.center[
+<img src="imagenes/Flowchart_ejemplo1.png">
+]
+
+---
+
+## Lenguajes de programación
+
+Todo lo anterior esta bien, pero ahora como hago que la computadora ejecute el algoritmo.
+
+.pull-left[.center[
+<img src="img/MatarFlanders.jpeg", width="300" height="300">
+]
+]
+
+.pull-right[
+
+En Bioinformática los lenguajes de programación más empleados para:
+
+- Manipulación de datos son: **R, Python y Bash (shell)**. 
+- Limpieza de datos de secuenciación: **Python y Bash (shell)**. 
+- Generar graficas: **R y Python**
+
+]
+
+---
+
+## Empezando a usar R
+
+- Declaración de variables en R
+
+```{r}
+a <- 3
+b <- 1
+```
+
+- Operaciones matemáticas en R
+
+```{r}
+3 + 1
+a + b
+```
+
+- Almacenar resultados en una nueva variable
+
+```{r}
+3 + 1
+c <- a + b
+c
+print(c)
+```
+
+
+---
+
+## Paso 3: Codificación / Escribir el código
+
+> **Problema:** Realizar un algoritmo que solicite al usuario *dos numeros enteros*, realice su suma y la imprima en pantalla.
+
+----
+
+```{r eval=FALSE}
+# ---Algoritmo(Sumar)---
+# 1) Solicitar al usuario los datos de entrada (variable a y b).
+# --INICIO--
+{
+    a <- readline("Digite el primer numero: ");
+    b <- readline("Digite el segundo numero: ");
+}
+# Convertir la entrada en numeros enteros
+a <- as.integer(a);
+b <- as.integer(b);
+
+# 2) Realizar la suma de los datos de entrada.
+c <- a + b 
+ 
+# 3) Mostrar el resultado.
+print(c)
+# --FIN_INICIO--
+# --- Fin_de_Algoritmo(Sumar) ---
+```
+
+---
+
+## Paso 4: Compilación y ejecución del programa
+
+.center[
+<img src="img/Boton.jpg">
+]
+
+---
+
+## Paso 4: Compilación y ejecución del programa
+
+> **Problema:** Realizar un algoritmo que solicite al usuario *dos numeros enteros*, realice su suma y la imprima en pantalla.
+
+
+```{r eval=FALSE}
+# ---Algoritmo(Sumar)---
+# 1) Solicitar al usuario los datos de entrada (variable a y b).
+# --INICIO--
+{
+    a <- readline("Digite el primer numero: ");
+    b <- readline("Digite el segundo numero: ");
+}
+# Convertir la entrada en numeros enteros
+a <- as.integer(a);
+b <- as.integer(b);
+
+# 2) Realizar la suma de los datos de entrada.
+c <- a + b 
+ 
+# 3) Mostrar el resultado.
+print(c)
+# --FIN_INICIO--
+# --- Fin_de_Algoritmo(Sumar) ---
+```
+
+---
+
+## Entendiendo el funcionamiento del codigo
+
+.center[
+<img src="imagenes/Flowchart_ejemplo1_p2.png">
+]
+
+---
+
+## Paso 5: Verificación / Realizar pruebas
+
+R arroja en mensajes los *errores* encontrados en el Código. A veces unos más claros que otros. 
+
+Como recomendación **SIEMPRE usa R en su versión en inglés**. De esta manera puedes encontrar la respuesta a tu problema más rápido, solo necesitaras copiarlo y pegarlo en tu navegador. 
+
+Debes tomar en cuenta:
+
+- No dejar espacios cuando declaras una variable. EJEMPLO: mi variable.
+
+- Cuida la escritura de tus variables. No repitas el mismo nombre porque esta variable se sobrescribe.
+
+- Siempre verifica la declaración de tu variable en el ambiente (Environment), si no existe R te arrojara error.
+
+- Carga siempre los paquetes que vas a usar **ANTES de ejecutar el código**. 
+
+- Realiza pruebas para verificar la salida de tu programa.
+
+---
+
+## Paso 6: Depuración / Detectar los errores y corregirlos
+
+> **Problema:** Realizar un algoritmo que solicite al usuario *dos numeros enteros*, realice su suma y la imprima en pantalla.
+
+----
+
+```{r }
+# Verificar el formato de las variables
+str(a)
+str(b)
+str(c)
+
+# O pueden buscar el de todas las variables
+str(a,b,c)
+```
+
+EJERCICIO:
+
+> 1. Realiza la suma de 7 + 6 e imprime el resultado.
+> 2. Realizar un algoritmo que solicite al usuario *3 numeros enteros*, realice su suma y la imprima en pantalla
+> Volver a correr el codigo y verificar la salida.
+
+---
+
+## Paso 7: Documentación
+
+> **Problema:** Realizar un algoritmo que solicite al usuario *dos numeros enteros*, realice su suma y la imprima en pantalla.
+
+----
+
+- *Autor*: Su nombre
+
+- Fecha de creacion
+
+- *Informacion*: El siguiente programa realiza la suma de dos numeros enteros a partir de la entrada del usuario y posteriormente la imprime en pantalla.
+
+- *Input*: Solo numeros enteros (sin decimales).
+
+- ¿Cómo se utiliza y para qué sirve?
+
+---
+
+## Ejercicio
+
+1) Cual es el error del siguiente codigo? .spoiler[La variable no ha sido declarada]
+
+```{r eval=FALSE}
+my_variable <- 10
+my_varable
+
+#Error: object 'my_varable' not found
+```
+
+> NOTA: Es importante mantener la jerarquia de operaciones.
+
+2) Obten el resultado de las siguientes operaciones
+
+```{r}
+2+3*7-6/3
+(2+3)*7-(6/3)
+(2+3)*(7-6)/3
+```
+
+---
+
+## Ejercicio
+
+3) Obtener perimetro de un rectangulo que mide 7 cm de ancho (altura, h) y 10 cm de largo (base, b). Genera su diagrama de flujo e imprime su resultado.
+
+.center[
+<img src="imagenes/rectangulo.jpg", width="300" height="100">
+]
+
+```{r}
+# 1) Declarar las variables
+b <- 10
+h <- 7
+
+P <- 2*(b + h) # 2) Realizar el calculo del perimetro
+print(P) # 3) Mostrar el resultado.
+```
+
+---
+
+# Bibliografias
+
+- Bioinformatica, NIH, 2023 (https://www.genome.gov/es/genetics-glossary/Bioinformatica)
+
+- Bioinformática:  “Welcome to the Welcome”, Julio Collado Vides, CCG.
+
+- Pseudocodigo, Diagramas de Flujo y algo de C de [Pascual Coronel](https://slideplayer.es/slide/13658656/)
+
+- [R: Introduction and Data Management](https://bouchat.github.io/IntroDataMgmt20Jan.html)
+
+
+
+
