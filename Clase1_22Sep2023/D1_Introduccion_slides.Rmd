@@ -269,7 +269,7 @@ Un algoritmo podemos definirlo como un programa. Ejemplo: Un **paquete** de inst
 
 ---
 
-## Alguien ya resolvió ese problema años anteso uno similar, nunca dudes de buscarla en internet… también está chat GPT
+## Alguien ya resolvió ese problema años antes o uno similar, nunca dudes de buscar en internet… también está chat GPT
 
 .center[
 <img src="imagenes/meme_preguntas.jpg", width="500" height="400">
