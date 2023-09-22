@@ -269,6 +269,15 @@ Un algoritmo podemos definirlo como un programa. Ejemplo: Un **paquete** de inst
 
 ---
 
+## Alguien ya resolvió ese problema años anteso uno similar, nunca dudes de buscarla en internet… también está chat GPT
+
+.center[
+<img src="imagenes/meme_preguntas.jpg", width="500" height="400">
+
+]
+
+---
+
 ## Pasos 
 
 .pull-left[
@@ -579,19 +588,44 @@ EJERCICIO:
 
 ## Paso 7: Documentación
 
-> **Problema:** Realizar un algoritmo que solicite al usuario *dos numeros enteros*, realice su suma y la imprima en pantalla.
+.content-box-gray[
+- *Autor (author)*: Su nombre
 
-----
+- *Dia (date)*: Fecha de creación
 
-- *Autor*: Su nombre
+- *Paquetes (packages)*
 
-- Fecha de creacion
+- *Directorio de trabajo (Working directory)*: En que carpeta se encuentra tu datos y programa.
 
-- *Informacion*: El siguiente programa realiza la suma de dos numeros enteros a partir de la entrada del usuario y posteriormente la imprime en pantalla.
+- *Información descriptiva del programa (Description)*: ¿Para qué sirve el programa? Ej: El siguiente programa realiza la suma de dos numeros enteros a partir de la entrada del usuario y posteriormente la imprime en pantalla.
 
-- *Input*: Solo numeros enteros (sin decimales).
+- *Usage* ¿Cómo se utiliza?
 
-- ¿Cómo se utiliza y para qué sirve?
+- *Argumentos (Arguments)*
+
+  - *Información de entrada (Data Inputs)*: Ej: Solo numeros enteros (sin decimales).
+
+  - *Información de salida (Outpus)*: Graficas, figuras, tablas, etc.
+
+]
+---
+
+.center[
+<img src="imagenes/meme_documentacion.jpg">
+
+]
+
+---
+
+## Ejemplo: Función suma
+
+Google :  [Sum Function usage](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/sum)
+
+
+.center[
+<img src="imagenes/sum_function.png", width="500" height="400">
+
+]
 
 ---
 
@@ -634,6 +668,15 @@ h <- 7
 P <- 2*(b + h) # 2) Realizar el calculo del perimetro
 print(P) # 3) Mostrar el resultado.
 ```
+
+---
+
+## Siempre toma lo mejor de los mejores y aprende de sus códigos
+
+.center[
+<img src="imagenes/meme_bioinfo.jpg", width="500" height="400">
+
+]
 
 ---
 
