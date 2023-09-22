@@ -422,7 +422,7 @@ Pueden generar sus diagramas en Powerpoint, [Canva](https://www.canva.com/graphs
 
 ## Lenguajes de programación
 
-Todo lo anterior esta bien, pero ahora como hago que la computadora ejecute el algoritmo.
+Todo lo anterior está bien, pero ahora como hago que la computadora ejecute el algoritmo.
 
 .pull-left[.center[
 <img src="img/MatarFlanders.jpeg", width="300" height="300">
@@ -534,7 +534,7 @@ print(c)
 
 ---
 
-## Entendiendo el funcionamiento del codigo
+## Entendiendo el funcionamiento del código
 
 .center[
 <img src="imagenes/Flowchart_ejemplo1_p2.png">
@@ -582,7 +582,7 @@ EJERCICIO:
 
 > 1. Realiza la suma de 7 + 6 e imprime el resultado.
 > 2. Realizar un algoritmo que solicite al usuario *3 numeros enteros*, realice su suma y la imprima en pantalla
-> Volver a correr el codigo y verificar la salida.
+> Volver a correr el código y verificar la salida.
 
 ---
 
@@ -631,7 +631,7 @@ Google :  [Sum Function usage](https://www.rdocumentation.org/packages/base/vers
 
 ## Ejercicio
 
-1) Cual es el error del siguiente codigo? .spoiler[La variable no ha sido declarada]
+1) ¿Cuál es el error del siguiente código?
 
 ```{r eval=FALSE}
 my_variable <- 10
@@ -654,7 +654,7 @@ my_varable
 
 ## Ejercicio
 
-3) Obtener perimetro de un rectangulo que mide 7 cm de ancho (altura, h) y 10 cm de largo (base, b). Genera su diagrama de flujo e imprime su resultado.
+3) Obtener perímetro de un rectángulo que mide 7 cm de ancho (altura, h) y 10 cm de largo (base, b). Genera su diagrama de flujo e imprime su resultado.
 
 .center[
 <img src="imagenes/rectangulo.jpg", width="300" height="100">
