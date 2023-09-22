@@ -1,0 +1,236 @@
+---
+title: "Dia 1 Introduccion a R"
+output: html_document
+date: "2023-08-31"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Temario
+
+Dia 1. Conceptos básicos de bioinformática y pseudocódigo
+
+- pseudocodigo
+- Pasos de Pseudocodigo
+- Que es una consola
+- Que lenguajes basicos deberian de aprender (R, bash, awk, python)
+- Ejercicios
+
+Dia 2. Introducción a R
+
+- Calculos simples con R
+- Funciones basicas (dim, length, head, tail, sum, mean , median)
+- Variables
+- Dataframe, vector
+- Generando funciones
+- Ejercicios
+
+Dia 3. Manipulación y limpieza de datos con dplyr y tidyr
+
+- Importar datos en R
+- Limpieza y manipulacion de datos
+- Ejercicios
+
+Dia 4. Visualización grafica con ggplot2
+
+- Introduccion a ggplot2
+- Componentes
+- Tipos de graficas
+- Funcion con grafico
+- Ejercicios
+
+Dia 5. Caso de estudio de la bioinformática en la medicina
+
+- Ejercicios
+
+
+## Dia 1. Conceptos basicos de bioinformatica y pseudocodigo
+
+## Un algoritmo es preciso, definido y finito
+
+Un algoritmo es un método para resolver un problema mediante una serie de pasos definidos, precisos y finitos.
+
+- Preciso: implica el orden de realización de cada uno de los pasos.
+
+- Definido: si se sigue dos veces, se obtiene el mismo resultado.
+
+- Finito: Tiene un numero determinado de pasos, implica que tiene un fin.
+
+Un algoritmo podemos definirlo como un programa. Ejemplo: Un **paquete** de instalacion en R es un programa.
+
+## Pseudocodigo
+
+- El pseudocodigo es una manera de escribir algoritmos de forma poco estricta (con una sintaxis relajada) o estructura de datos poco detalladas. Intentando organizar los pasos necesarios para generar el algoritmo.
+
+- Lenguaje sencillo y facil de leer para las personas.
+
+- Los pasos descritos pueden posteriormente traducirse en algun lenguaje de programacion, con la ventaja de no estar regido por las normas de un lenguaje de programacion en particular.
+
+- El pseudocodigo tambien va a utilizar una serie de palabras claves o palabras especies que va a indicarnos lo que significa el algoritmo.
+
+## Importancia de aprender Pseudocodigo
+
+- Es la base de cualquier lenguaje de programacion.
+
+- Si tu aprendes Pseudocodigo puedes escalar lo aprendido a TODOS los lenguajes de programacion.
+
+- Puedes usar el pseudocodigo para encontrar ejemplos en internet para poder resolver tu problema. 
+
+- En el mundo de la bioinformatica / programacion se le conoce solamente como codigo (Code) o Script.
+
+## Pasos 
+
+1. Análisis del problema / Definir el problema 
+2. Diseño del algoritmo / Diseño del programa
+3. Codificación / Escribir el codigo
+4. Compilación y ejecución del programa
+5. Verificación / Realizar pruebas
+6. Depuración / Detectar los errores y corregirlos
+7. Documentación
+
+## Paso 1: Análisis del problema / Definir el problema 
+
+Problema 
+
+Ejemplo: Realizar un algoritmo que solicite al usuario dos numeros enteros, realice su suma y la imprima en pantalla.
+
+
+## Paso 2: Diseño del algoritmo / Diseño del programa
+
+- Cuales son las variables o datos necesarios para ejecutar el programa (input)?
+- Que es lo que tengo que hacer para resolver el problema?
+- Cuales son las variables o datos de salida (output)?
+
+
+## Ejercicio
+
+Instrucciones: Realizar un algoritmo que solicite al usuario dos numeros enteros, realice su suma y la imprima en pantalla.
+
+- Algoritmo: Suma
+
+- Input: Declarar variables (a y b). 
+
+- Output: Resultado de la suma (variable c).
+
+- Proceso: 
+1) Solicitar al usuario los datos de entrada.
+2) Realizar la suma de los datos de entrada.
+3) Mostrar el resultado.
+
+## Ejercicio 
+
+Instrucciones: Realizar un algoritmo que solicite al usuario *dos numeros enteros*, realice su suma y la imprima en pantalla.
+
+
+Traduccion a pseudocodigo:
+
+- Algoritmo: Suma
+
+- Input: Declarar variables de *numeros enteros* (a y b). 
+
+- Output: Resultado de la suma, variable de *numero entero* (c).
+
+- Proceso: 
+1) Solicitar al usuario los datos de entrada.
+
+`ESCRIBA("Digite el primer numero (entero)")`
+`ESCRIBA()`
+
+2) Realizar la suma de los datos de entrada.
+3) Mostrar el resultado.
+
+## Paso 3: Codificación / Escribir el codigo
+
+
+
+
+
+
+
+## Ejercicio
+
+Instrucciones: Realizar un algoritmo que solicite al usuario dos numeros enteros, realice su suma y la imprima en pantalla.
+
+- Algoritmo: Suma
+
+- Input: Declarar variables (a y b).
+Variables de numeros enteros: a, b
+
+- Output: Resultado de la suma (variable c).
+
+- Proceso: 
+1) Solicitar al usuario los datos de entrada.
+2) Realizar la suma de los datos de entrada.
+3) Mostrar el resultado.
+
+
+
+## Paso 4: Compilación y ejecución del programa
+
+```{r eval=FALSE}
+# R program to illustrate
+# taking input from the user
+ 
+# taking multiple inputs
+# using braces
+{
+    var1 = readline("Enter 1st number : ");
+    var2 = readline("Enter 2nd number : ");
+    var3 = readline("Enter 3rd number : ");
+    var4 = readline("Enter 4th number : ");
+}
+ 
+# converting each value
+var1 = as.integer(var1);
+var2 = as.integer(var2);
+var3 = as.integer(var3);
+var4 = as.integer(var4);
+ 
+# print the sum of the 4 number
+print(var1 + var2 + var3 + var4)
+```
+
+
+## Paso 5: Verificación / Realizar pruebas
+
+
+## Paso 6: Depuración / Detectar los errores y corregirlos
+
+
+## Paso 7: Documentación
+
+
+## Sintaxis utilizada
+
+1. Incio y Fin: Por donde empieza y acaba el algoritmo.
+2. Datos: Aquí se declaran e inicializan las variables que utilizará el algoritmo.
+3. Codigo: En esta sección se escribe el algoritmo.
+
+Pseudocódigo de un algoritmo genérico:
+
+INICIO.
+DATOS: ** esto es un comentario **
+entero a ; ** declaración de una variable entera **
+real b = 0 ; ** declaración e inicialización de una variable **
+
+ALGORITMO:
+leer a ;
+b = a + 5 ;
+escribir b ;
+FIN.
+
+
+
+
+
+
+
+## Clases
+
+Clases de los valores en R (integer, numeric, character)
+
+
+
+
