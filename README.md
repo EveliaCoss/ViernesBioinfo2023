@@ -51,7 +51,7 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 
 ## Clases grabadas
 
-- [Clase 1](https://drive.google.com/file/d/1vUhmIOhukyF71soN-25Y2KyA6VvQk7z3/view?usp=sharing)
+- [Clase 1. Conceptos básicos de bioinformática y pseudocódigo](https://drive.google.com/file/d/1vUhmIOhukyF71soN-25Y2KyA6VvQk7z3/view?usp=sharing)
 
 
 ------
