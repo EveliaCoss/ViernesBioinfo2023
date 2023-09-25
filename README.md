@@ -49,6 +49,11 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 - Viernes 11. Llamado de variantes genticas, parte 2  (8/dic/2023) - M.C. Ana H  
 - Viernes 12. (15/dic/2023) -
 
+## Clases grabadas
+
+- [Clase 1](https://drive.google.com/file/d/1vUhmIOhukyF71soN-25Y2KyA6VvQk7z3/view?usp=sharing)
+
+
 ------
 
 Temas propuestos por confirmar: ♣️
@@ -65,5 +70,8 @@ Cursos propuestos por los participantes:
 - Procesamiento y analisis de datos de scRNA-Seq.
 
 -------
+
+
+
 
 Cursos hechos con amor 💜
