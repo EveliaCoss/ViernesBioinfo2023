@@ -49,7 +49,7 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 - Fecha: Viernes 22 de Septiembre 2023
 - Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
 - Presentación: [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1)
-- Grabación: [Viernes 1](https://drive.google.com/file/d/1vUhmIOhukyF71soN-25Y2KyA6VvQk7z3/view?usp=sharing)
+- Grabación: [Viernes 1](https://drive.google.com/file/d/1SO6EJuKUXQzeIgL95unQ4d_TMo1gP1Jf/view?usp=sharing)
 - Lecturas y cursos recomendados:
   - [Summer R 2015](https://aejaffe.com/summerR_2015/)
   - [Bioinformatica, NIH, 2023](https://www.genome.gov/es/genetics-glossary/Bioinformatica)
