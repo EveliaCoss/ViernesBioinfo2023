@@ -2,7 +2,7 @@
 
 Presentación: https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1
 
-Video: [Clase 1](https://drive.google.com/file/d/1vUhmIOhukyF71soN-25Y2KyA6VvQk7z3/view?usp=sharing)
+Video: [Clase 1](https://drive.google.com/file/d/1SO6EJuKUXQzeIgL95unQ4d_TMo1gP1Jf/view?usp=sharing)
 
 ## Material Extra para usar Xaringan
 
