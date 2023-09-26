@@ -59,7 +59,7 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 
 ## Licencia y términos de uso
 
-El material de los VieRnes de Bioinformatica se distribuye públicamente a través de este repositorio GitHub bajo la [Licencia No Comercial Creative Commons 4.0]https://creativecommons.org/licenses/by-nc/4.0/)
+El material de los VieRnes de Bioinformatica se distribuye públicamente a través de este repositorio GitHub bajo la [Licencia No Comercial Creative Commons 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Creative Commons Licence
 This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
