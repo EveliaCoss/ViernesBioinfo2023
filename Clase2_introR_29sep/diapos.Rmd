@@ -438,9 +438,473 @@ sessionInfo()
 
 Puedes intentar correr este comando tú, lo que verás impreso en consola son todas las librerías instaladas en tu sesión de R, así como **la versión**. Entonces así, si alguien quiere reproducir tus resultados en algún momento, deberá instalar las mismas versiones de las librerías que tú utilizaste.
 
-## 
+---
+## Leer datos en R
+
+Existen distintos tipos de formatos de datos que podemos ingresar a R para su análisis. Los principales son:
+
+#### Datos separados por un valor
+
+Por ejemplo por comas (.csv), tab (.tsv) o espacios. Aunque la siguiente función puede leer por cualquier separador.
+
+```{r, eval = F}
+read.table("/path/dataset.csv", header = TRUE, delim = ",")
+read.table("/path/dataset.tsv", header = TRUE, delim = "\t")
+read.table("/path/dataset.", header = TRUE, delim = ",")
+```
+
+El parámetro header nos dice si considerar la primera fila como nombre de las variables.
+
+También podemos leer un archivo .csv directamente:
+
+```{r, eval = F}
+read.csv("/path/dataset.csv")
+```
+
+---
+
+#### Archivos tipo RData
+
+Usualmente cargan todo el ambiente o varias variables
+
+```{r, eval = F}
+load("/path/ambiente.RData")
+```
+
+#### Archivos tipo RDS
+
+Se usan para cargar variables, usualmente muy pesadas
+
+```{r, eval = F}
+variable <- readRDS("/path/variable.RData")
+```
+
+---
+### Ejercicio: cargar un dataset
+
+Ve a este [link](https://drive.google.com/file/d/1nBfZpmQNRxGMg_JeAsSKqaOPBFQur_V5/view?usp=drive_link) y descarga el archivo `planets.csv`. Asegúrate de guardarlo en el directorio donde hiciste tu Rproject.
 
 ```{r}
 getwd()
 ```
 
+Carga tu archivo .csv en una variable llamada `planets`
+---
+### Ejercicio: cargar un dataset
+
+Ve a este [link](https://drive.google.com/file/d/1nBfZpmQNRxGMg_JeAsSKqaOPBFQur_V5/view?usp=drive_link) y descarga el archivo `planets.csv`. Asegúrate de guardarlo en el directorio donde hiciste tu Rproject.
+
+```{r}
+getwd()
+```
+
+Carga tu archivo .csv en una variable llamada `planets`
+
+```{r}
+planets <- read.csv("planets.csv")
+```
+
+Podemos accesar a las primeras n filas con el comando 
+
+```{r}
+head(planets, 1)
+```
+
+---
+
+## Tipos de datos en R
+
+- `numeric`: guardamos números reales, enteros o decimales
+
+```{r}
+num <- 6
+decimal <- 3.4
+```
+
+```{r}
+class(num)
+class(decimal)
+```
+
+- `character`: guardamos texto
+
+```{r}
+texto <- "hola"
+texto2 <- 'mundo'
+class(texto)
+class(texto2)
+```
+
+---
+- `logical`: representan valores binarios `TRUE` o `FALSE`
+
+```{r}
+val <- 4 < 5
+val
+class(val)
+```
+
+- `integer`: Podemos definir enteros explícitamente
+
+```{r}
+count <- 42L
+class(count)
+```
+
+- `complex`: Podemos representar númeor complejos con números reales e imaginarios
+
+```{r}
+z <- 2 + 3i
+class(z)
+```
+
+---
+ - `factor`: Los factores representan datos categóricos, podemos crearlos con la función `factor()`. 
+
+```{r}
+size <- factor(c("small", "large", "medium", "small"))
+class(size)
+```
+
+En ocasiones, queremos ver cuántas categorías de un factor existen, podemos saberlo con la función `levels()`.
+
+```{r}
+levels(size)
+```
+
+Algunas funciones estadísticas requieren que una variable sea de tipo `factor`, podemos convertir cualquier variable en factor con la función `as.factor()`
+
+```{r}
+group <- c(1, 2, 3, 2, 2, 4, 2, 3)
+class(group)
+```
+
+```{r}
+group <- as.factor(group)
+class(group)
+levels(group)
+```
+
+---
+- R tiene distintos tipos de datos de fecha y tiempo, incluyendo `Date`.
+
+```{r}
+cumple <- as.Date("1990-01-23")
+class(cumple)
+```
+
+---
+
+- `list`: son tipos de datos versátiles que pueden guardar distintos tipos de datos, incluyendo vectores, matrices u otras listas.
+
+```{r}
+person <- list(name = "Alice", age = 30, scores = c(85, 92, 78))
+person
+```
+
+Podemos accesar a los elementos de una lista con el signo `$`
+
+```{r}
+person$age
+```
+
+En ocasiones, podemos tener una gran cantidad de elementos en una lista, podemos ver cuáles son con `names()`.
+
+```{r}
+names(person)
+```
+
+---
+- `vector`: son arreglos de una dimensión, pueden guardar elementos del mismo tipo de datos. Algunos tipos comúnes de vectores in son numéricos o lógicos
+
+```{r}
+grades <- c(88, 45, 75, 90, 100) # numeric vector
+testimonies <- c(TRUE, FALSE, TRUE, TRUE, FALSE) # logical vector
+```
+
+Podemos accesar a un elemento de un vector con el índice del elemento (el lugar en donde está), empezando desde el 1
+
+```{r}
+grades[2]
+```
+
+Accesar a un múltiples elementos por sus posiciones: utilizamos un vector de índices que nos interesan dentro de `[]`
+
+```{r}
+my_vector <- c(10, 20, 30, 40)
+my_vector[c(1,3,4)]
+```
+
+---
+
+Accesar a un vector con condiciones lógicas: 
+
+```{r}
+my_vector <- c(10, 20, 30, 40, 50, 60)
+my_vector[my_vector>24]
+```
+
+**Ejercicio: accesa a la calificación 90**
+
+---
+
+Accesar a un vector con condiciones lógicas: 
+
+```{r}
+my_vector <- c(10, 20, 30, 40, 50, 60)
+my_vector[my_vector>24]
+```
+
+**Ejercicio: accesa a la calificación 90**
+
+```{r}
+grades[90]
+```
+
+---
+
+- `matrix`: las matrices son datos de dos dimensiones, con filas y colunas. Todos los elementos deben de ser del mismo tipo de dato.
+
+```{r}
+matrix_a <- matrix(c(1,2,3,4,5,6), nrow = 2, ncol = 3)
+matrix_a
+```
+
+Para accesar a un elemento de una matrix, debemos especificar primero la fila y luego la columna. Supongamos que queremos accesar al elemento "2", que está en la fila 2, columna 1
+
+```{r}
+matrix_a[2,1]
+```
+
+Podemos también accesar a una fila o una columna entera con la siguiente notación:
+
+```{r}
+matrix_a[1,] # accesamos a la fila 1
+```
+
+```{r}
+matrix_a[,3] # accesamos a la columna 3
+```
+---
+
+**Ejercicio: accesa a la columna 1 y 3 de la matriz**
+
+
+---
+
+**Ejercicio: accesa a la columna 1 y 3 de la matriz**
+
+```{r}
+matrix_a[,c(1,3)]
+```
+
+Accesamos a una matrix con condiciones lógicas:
+
+```{r}
+matrix_a[matrix_a > 2]
+```
+
+---
+`array`: los datos de este tipo extienden la concepción de matrices y vectores a más dimensiones
+
+```{r}
+arr <- array(1:24, dim = c(2,3,4))
+arr
+```
+
+---
+## Dataframes
+
+- `data.frame`: Los data frames son similares a las matrices, tienen 2 dimensiones, pero podemos almacenar distintos tipos de datos
+
+```{r}
+df <- data.frame(name = c("John", "Alice", "Bob"), age = c(25, 30, 28))
+df
+```
+
+`planets` es un dataframe!!
+
+```{r}
+class(planets)
+```
+---
+Para conocer las dimensiones de un dataframe:
+
+```{r}
+dim(planets)
+```
+
+---
+Podemos accesar a las columnas de los data frames de la misma manera que con las listas, con `$`
+
+```{r}
+df$name
+```
+
+O también con notación de matrices
+
+```{r}
+df[, "name"]
+```
+
+Y podemos conocer cuáles son las columnas con `colnames()` o con `names()`
+
+```{r}
+colnames(df)
+```
+
+**Ejercicio: Ingresa a la columna "orbital_period" del dataset `planets`**
+
+**Ejercicio: Determina el tipo de dato de la columna**
+
+---
+
+**Ejercicio: Ingresa a la columna "orbital_period" del dataset `planets`**
+
+```{r}
+planets$orbital_period
+```
+
+**Ejercicio: Determina el tipo de dato de la columna**
+
+```{r}
+class(planets$orbital_period)
+```
+
+---
+
+### ¿Cómo acceder a un elemento específico de un dataframe?
+
+Si conoces la fila y columna, puedes hacerlo con notación de matrices.
+
+```{r}
+planets[4, 4] # Diametro de Dagobah
+```
+
+Si no conoces la columna, pero sabes que debe de ser la fila de un valor de otra columna (por ejemplo, nombre del planeta), utilizamos:
+
+Notación de vectores:
+
+```{r}
+planets[planets$name =="Dagobah",]$diameter
+```
+
+**Ejercicio: También puedes usar la función `subset()`**
+
+```{r, eval = F}
+?subset
+```
+
+---
+
+```{r}
+subset(planets, name == "Dagobah", select = diameter)
+```
+
+Puedes sacar el valor numérico convirtiéndolo a numeric con `as.numeric`
+
+```{r}
+as.numeric(subset(planets, name == "Dagobah", select = diameter))
+```
+
+O, escrito de otra manera:
+
+```{r}
+subset(planets, name == "Dagobah")$diameter
+```
+
+**Ejercicio: utiliza subset para determinar el diameter, orbital_period y climate de Hoth**
+
+---
+
+```{r}
+subset(planets, name == "Hoth", select = c(diameter, orbital_period, climate))
+```
+
+Podemos accesar a filas con una condición de una columna:
+
+```{r}
+planets[(planets$surface_water > 50), ]
+```
+---
+
+O también con subset, ignora los NA
+
+```{r}
+subset(planets, surface_water > 50)
+```
+---
+
+Podemos quitar los 'NA' de los datasets con el siguiente comando
+
+```{r}
+clean_planets <- planets[!is.na(planets),]
+```
+
+**Ejercicio: Del dataset clean_planets, obtén los nombres de los planetas cuyo diámetro sea menor a 10,000 y que su clima sea solo "temperate"** 
+---
+**Ejercicio: Del dataset clean_planets, obtén los nombres de los planetas cuyo diámetro sea menor a 10,000 y que su clima sea solo "temperate"** 
+
+```{r}
+subset(clean_planets, (diameter < 10000) & (climate == "temperate"), select = name)
+```
+
+---
+### Rownames
+- Te darás cuenta que cuando hacemos `subset`, en consola se imprime un número antes de nuestros datos deseados. Estos corresponden a las rownames o nombres de las filas del dataset.
+
+```{r}
+rownames(planets)
+```
+
+- Podemos renombrar las rownames, reemplazandolas por un vector de la misma longitud
+
+```{r}
+length(rownames(planets))
+```
+
+**Ejercicio: renombra las rownames con números aleatorios del 600-700, utiliza la función `sample`**
+
+```{r, eval = F}
+?sample
+```
+---
+
+Utilizando sample, generamos una muestra de tamaño n. Con `replace = FALSE`, le decimos que no queremos que se repitan los valores muestreados.
+
+```{r}
+n = length(rownames(planets))
+new_rownames <- sample(600:700, n, replace = FALSE)
+new_rownames
+```
+Sustituimos los nuevos rownames
+
+```{r}
+rownames(planets) <- new_rownames
+```
+
+```{r}
+rownames(planets) 
+```
+
+---
+### Operaciones aritméticas básicas
+
+Estas son las operaciones aritméticas básicas en R.
+
+```{r}
+suma <- 5 + 3
+resta <- 5 - 3
+multiplicacion <- 4 * 6
+division <- 4 / 3
+exponente <- 4**2 # tambien 4^2
+modulo <- 10%%3
+division_exacta <- 10%/%3
+```
+
+Podemos realizar operaciones con variables, constantes y/o expresiones, solo recordemos el orden de las operaciones
+
+```{r}
+resultado <- (suma + resta) **2 # (8 + 2)^2
+resultado
+```
