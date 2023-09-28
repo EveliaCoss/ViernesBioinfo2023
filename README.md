@@ -27,6 +27,7 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 - M.C. Ana Hernandez
 - LBT. Fernanda Miron
 - Jazmin Lopez Chacon
+- Oscar Aldana 
 
 ## Contenido 📌
 
