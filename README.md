@@ -27,21 +27,24 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 - M.C. Ana Hernandez
 - LBT. Fernanda Miron
 - Jazmin Lopez Chacon
+- Oscar Aldana 
 
 ## Contenido 📌
 
 - Viernes 1. [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1) (22/sep/2023) - Dra. Evelia Coss
 - Viernes 2. Introducción a R, parte 1 (29/sep/2023) - LCG. Sofia Salazar
 - Viernes 3. Introducción a R, parte 2 (06/oct/2023) - LCG. Sofia Salazar
-- Viernes 4. Manipulación y limpieza de datos con dplyr y tidyr (13/oct/2023) - Dra. Evelia Coss
-- Viernes 5. Visualización grafica con ggplot2 (20/oct/2023) - Fernanda Miron
-- Viernes 6. Exploracion de datos y eleccion de pruebas o modelos (27/oct/2023) - Dr. Domingo Matinez
-- Viernes 7. Uso del cluster y tus primeros pasos en bash (10/nov/2023) - Ing. Jair Santiago Garcia Sotelo
-- Sabado. Shiny app (11/nov/2023) - Jazmin (10am - 1pm)
+- Viernes 4. Manipulación y limpieza de datos con dplyr y tidyr / Creando funciones en R (13/oct/2023) - Dra. Evelia Coss
+- Viernes 5. Condicionales y loops en R (20/oct/2023) - Dra. Evelia Coss
+- Viernes 6. Visualización grafica con ggplot2 (27/oct/2023) - Fernanda Miron
+- Viernes 7. Exploracion de datos y eleccion de pruebas o modelos (por confirmar fecha) - Dr. Domingo Matinez
+- Viernes 7. Uso del cluster y tus primeros pasos en bash (por confirmar fecha) - Ing. Jair Santiago Garcia Sotelo
+- Sabado. Shiny app (11/nov/2023) - Jazmin Lopez Chacon (10 am - 1pm)
 - Viernes 8. (17/nov/2023) - 
 - Viernes 9. (24/nov/2023) - 
-- Viernes 10. Llamado de variantes genticas, parte 1  (1/dic/2023) - M.C. Ana H 
-- Viernes 11. Llamado de variantes genticas, parte 2  (8/dic/2023) - M.C. Ana H  
+- Viernes 10. Llamado de variantes geneticas, parte 1  (1/dic/2023) - M.C. Ana H 
+- Viernes 11. Llamado de variantes geneticas, parte 2  (8/dic/2023) - M.C. Ana H
+- Sabado. Empleo de REDCap (09/dic/2023) - Oscar Aldana (11 am - 1pm)
 - Viernes 12. (15/dic/2023) -
 
 ### Viernes 1: Conceptos básicos de bioinformática y pseudocódigo 
