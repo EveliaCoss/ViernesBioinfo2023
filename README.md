@@ -32,7 +32,7 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 ## Contenido 📌
 
 - Viernes 1. [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1) (22/sep/2023) - Dra. Evelia Coss
-- Viernes 2. Introducción a R, parte 1 (29/sep/2023) - LCG. Sofia Salazar
+- Viernes 2. [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1) (29/sep/2023) - LCG. Sofia Salazar
 - Viernes 3. Introducción a R, parte 2 (06/oct/2023) - LCG. Sofia Salazar
 - Viernes 4. Manipulación y limpieza de datos con dplyr y tidyr / Creando funciones en R (13/oct/2023) - Dra. Evelia Coss
 - Viernes 5. Condicionales y loops en R (20/oct/2023) - Dra. Evelia Coss
@@ -59,6 +59,17 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
   - [Bioinformática: “Welcome to the Welcome”, Julio Collado Vides, CCG](https://docs.google.com/presentation/d/1CLc59lN4HQ-WHMV2_aT1CCpbnfdcn0zD/edit?usp=sharing&ouid=115061201453977266962&rtpof=true&sd=true)
   - [Pseudocodigo, Diagramas de Flujo y algo de C de Pascual Coronel](https://slideplayer.es/slide/13658656/)
   - [R: Introduction and Data Management](https://bouchat.github.io/IntroDataMgmt20Jan.html)
+
+### Viernes 2: Introducción a R, parte 1
+
+- Fecha: Viernes 22 de Septiembre 2023
+- Instructora: [LCG. Sofia Salazar](https://github.com/SophSM)
+- Presentación: [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1)
+- Grabación: 
+- Lecturas y cursos recomendados:
+  - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
+  - [R for beginners](https://drive.google.com/file/d/1iCRDCXB5wzSzbpk0LJjPpYutluKTSlTp/view?usp=sharing)
+
 
 ## Licencia y términos de uso
 
