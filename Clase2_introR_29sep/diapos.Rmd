@@ -113,7 +113,7 @@ background-size: 15%
 .left-col[ 
 ### `r fontawesome::fa("dna", fill = "#181818")` Sofía Salazar Magaña
 
-Estudiante de la Licenciatura en Ciencias Genómicas @ [ENES-J UNAM](https://www.enesjuriquilla.unam.mx/?page_id=2136)
+Estudiante de la [Licenciatura en Ciencias Genómicas](https://www.enesjuriquilla.unam.mx/?page_id=2136) @ ENES-J UNAM
 
 Asistente de investigación @ [RegGenoLab](https://liigh.unam.mx/), LIIGH UNAM
 
@@ -150,13 +150,25 @@ R es un entorno de desarrollo de software libre y lenguaje de programación.
 
 **¿Por qué utilizar R?**
 
-Es comúnmente ampliamente para la computación estadística, gráfica, y de machine learning. Ofrece una amplia variedad de **funciones estadísticas** (modelos lineales y no lineales, pruebas estadísticas clásicas, análisis de series de tiempo, clasificación, agrupamiento, etc.), gráficas.
+Es ampliamente utilizado para la computación estadística, gráfica, y de machine learning. Ofrece una amplia variedad de **funciones estadísticas** (modelos lineales y no lineales, pruebas estadísticas clásicas, análisis de series de tiempo, clasificación, agrupamiento, etc.), y para realizar gráficas.
 
-Además, existen numerosas librerías que nos pemiten realizar análisis y gráficas, incluyendo para análisis genómicos.
+Además, existen numerosas librerías que nos pemiten realizar análisis y más gráficas, incluyendo para análisis de datos genómicos.
 
 .center[
 <img src = "figures/r-logo.png", height = "150">
 ]
+---
+
+.center[
+<img src = "figures/meme1.jpeg", height = "600">
+]
+
+---
+
+.center[
+<img src = "figures/meme2.jpeg", height = "600">
+]
+
 ---
 
 ## ¿Cómo instalamos R?
@@ -192,7 +204,9 @@ En el paso 2: Install R studio, nos debería detectar el sistema operativo, desc
 ---
 ## Las partes de RStudio
 
-
+.center[
+<img src = "figures/partes-rstudio.png", height = "600">
+]
 ---
 ## Cambiando el aspecto de RStudio
 Podemos cambiar la forma en que se ve la aplicación desde **Editar > Preferencias > Apariencia**, escogemos el tema que nos guste y damos click en **Aplicar** y luego **OK** 
@@ -283,11 +297,35 @@ Selecciona todo el código, después ve a la parte superior de la ventana del **
 .left-col[
 <img src = "figures/script-R.png", height = "150">]
 
-.right-col[
+.center-col[
+También pueden ejecutar tu código línea por línea, poniendo tu cursor al principio o al final de la linea y presionando las teclas **Control + Enter** o **Command + Enter**.
+]
+---
+## Crear un Rscript
+
+**¿Qué es un Rscript?** Es simplemente un archivo de texto con las instrucciones de nuestro algoritmo escritas en el lenguaje de R. También contiene nuestros comentarios escritos con `#`.
+
+Intenta escribir tu primer Rscript en el **editor**, copiando el siguiente algoritmo para realizar una suma:
+
+```{r, eval = F}
+a <- 2
+b <- 3
+suma = a + b
+suma
+```
+
+Selecciona todo el código, después ve a la parte superior de la ventana del **editor** y da click en el botón **Run**. Enseguida de esto, en la **consola** se ejecutará tu código y podrás ver el siguiente resultado:
+
+.left-col[
+<img src = "figures/script-R.png", height = "150">]
+
+.center-col[
 También pueden ejecutar tu código línea por línea, poniendo tu cursor al principio o al final de la linea y presionando las teclas **Control + Enter** o **Command + Enter**.
 ]
 
+.right-col[<img src = "figures/meme4.jpeg", height = "200">]
 ---
+
 ## R session
 
 Al momento de comenzar a ejecutar líneas de código, guardar valores en variables y cargar librerías, estaremos guardando esto en nuestra "sesión de R". Esto es un "ambiente" que puedes guardar al finalizar de trabajar y lo que guardaste lo puedes cargar a Rstudio la próxima vez que vayas a continuar trabajando.
@@ -325,6 +363,8 @@ Es buena idea comenzar **todos** tus scripts con las mismas líneas de código q
 - Librerías que utilizarás en el programa
 - Líneas en donde cargues los datos que vas a usar
 
+.center[
+<img src = "figures/meme3.jpeg", height = "280">]
 ---
 ## Buenas prácticas de programación: Set up de tu trabajo
 
@@ -908,3 +948,8 @@ Podemos realizar operaciones con variables, constantes y/o expresiones, solo rec
 resultado <- (suma + resta) **2 # (8 + 2)^2
 resultado
 ```
+
+---
+
+.center[<img src = "figures/meme5.jpeg", height = "600">]
+---
