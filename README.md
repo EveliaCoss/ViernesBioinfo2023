@@ -62,7 +62,7 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 
 ### Viernes 2: Introducción a R, parte 1
 
-- Fecha: Viernes 22 de Septiembre 2023
+- Fecha: Viernes 29 de Septiembre 2023
 - Instructora: [LCG. Sofia Salazar](https://github.com/SophSM)
 - Presentación: [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1)
 - Grabación: 
