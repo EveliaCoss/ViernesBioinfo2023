@@ -544,7 +544,7 @@ Carga tu archivo .csv en una variable llamada `planets`
 planets <- read.csv("planets.csv")
 ```
 
-Podemos accesar a las primeras n filas con el comando 
+Podemos accesar a las primeras n filas con el comando `head()` 
 
 ```{r}
 head(planets, 1)
@@ -591,7 +591,7 @@ count <- 42L
 class(count)
 ```
 
-- `complex`: Podemos representar númeor complejos con números reales e imaginarios
+- `complex`: Podemos representar números complejos con números reales e imaginarios
 
 ```{r}
 z <- 2 + 3i
@@ -655,7 +655,7 @@ names(person)
 ```
 
 ---
-- `vector`: son arreglos de una dimensión, pueden guardar elementos del mismo tipo de datos. Algunos tipos comúnes de vectores in son numéricos o lógicos
+- `vector`: son arreglos de una dimensión, pueden guardar elementos del mismo tipo de datos. Algunos tipos comúnes de vectores son numéricos o lógicos. Determinamos los valores de un vector con `c()` "concatenar"
 
 ```{r}
 grades <- c(88, 45, 75, 90, 100) # numeric vector
@@ -910,14 +910,15 @@ length(rownames(planets))
 ```
 ---
 
-Utilizando sample, generamos una muestra de tamaño n. Con `replace = FALSE`, le decimos que no queremos que se repitan los valores muestreados.
+Utilizando `sample`, generamos una muestra de tamaño n. Con `replace = FALSE`, le decimos que no queremos que se repitan los valores muestreados.
 
 ```{r}
 n = length(rownames(planets))
 new_rownames <- sample(600:700, n, replace = FALSE)
 new_rownames
 ```
-Sustituimos los nuevos rownames
+
+Sustituimos por los nuevos rownames
 
 ```{r}
 rownames(planets) <- new_rownames
