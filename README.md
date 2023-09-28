@@ -41,8 +41,8 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
 - Sabado. Shiny app (11/nov/2023) - Jazmin Lopez Chacon (10 am - 1pm)
 - Viernes 8. (17/nov/2023) - 
 - Viernes 9. (24/nov/2023) - 
-- Viernes 10. Llamado de variantes genticas, parte 1  (1/dic/2023) - M.C. Ana H 
-- Viernes 11. Llamado de variantes genticas, parte 2  (8/dic/2023) - M.C. Ana H
+- Viernes 10. Llamado de variantes geneticas, parte 1  (1/dic/2023) - M.C. Ana H 
+- Viernes 11. Llamado de variantes geneticas, parte 2  (8/dic/2023) - M.C. Ana H
 - Sabado. Empleo de REDCap (09/dic/2023) - Oscar Aldana (11 am - 1pm)
 - Viernes 12. (15/dic/2023) -
 
