@@ -8,11 +8,24 @@ Fomentar la formación y crecimiento en bioinformática a través de cursos grat
 
 ## Informacion sobre horarios 💻
 
-- Viernes de 11 am a 1 pm, el horario puede variar unos dias dependiendo del instructor.
+- Viernes de 11 am a 1 pm CDMX (GMT-6), el horario puede variar unos dias dependiendo del instructor.
 - Inicio: 22 de septiembre de 11 am a 1 pm.
 - Clases hibridas en el aula de Bioinformatica de LIIGH y Zoom.
 - Intentaremos grabar las sesiones 📹.
 - Este curso de contempla finalizar hasta diciembre de 2023.
+
+### Verifica tu horario
+
+- **CDMX (GMT-6)** - 11 am - 1 pm
+- **Nicaragua, Manágua (GMT -6)**  - 11 am - 1 pm
+- **El Salvador (GMT -6)**  - 11 am - 1 pm
+- **Perú, Lima (GMT -5)**  - 12 pm  - 2 pm
+- **Colombia, Bogotá (GMT -5)** - 12 pm  - 2 pm
+- **Ecuador, Quito  (GMT -5)**  - 12 pm  - 2 pm
+- **Bolívia, La Paz (GMT -4)** - 1 pm - 3 pm
+- **Argentina, Buenos Aires (GMT -3)** - 2 pm  - 4 pm
+- **Chile, Santiago  (GMT -3)** - 2 pm  - 4 pm
+- **Uruguay, Montevideo (GMT -3)** - 2 pm  - 4 pm
 
 ## Inscripcion
 
