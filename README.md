@@ -13,6 +13,7 @@ Fomentar la formación y crecimiento en bioinformática a través de cursos grat
 - Clases hibridas en el aula de Bioinformatica de LIIGH y Zoom.
 - Intentaremos grabar las sesiones 📹.
 - Este curso de contempla finalizar hasta marzo de 2024 (1 semestre).
+- Los cambios en horarios se anunciaran por Discord. 
 
 ### Verifica tu horario
 
@@ -42,6 +43,17 @@ Se otorgará un diploma a los participantes que cuenten con el **80 % de las asi
 Posterior a tu inscripción en el [Google form](https://forms.gle/yMZoQA4SNw8D2K6y9) se enviara al mismo correo registrado un formulario GENERAL proveniente de REDCap, verifica el SPAM en caso de no encontrarlo en tu bandeja de entrada. Este formulario se enviará máximo 1 o 2 días posteriores a tu inscripción, SOLO si te inscribiste antes del *JUEVES A LAS 6 PM*. **Las solicitudes recibidas posteriormente a este día y hora, recibirán el formulario posterior a la clase.**
 
 La asistencia se captura en REDCap llenando los formularios que se te envíen los dias miercoles o jueves, los cuales tienen un tiempo de caducidad de algunos días a partir de la recepción del correo. 
+
+## Información en Discord
+
+El enlace de Discord se te envía por correo, máximo 1 o dos días posteriores a tu inscripción.  
+
+Se les solicita a los participantes respetar las **reglas y código de conducta presentes en el servidor de Discord**. Además, se les solicita como medidas de seguridad para todos los participantes presentes en el servidor:
+
+1) **Contar con un NOMBRE COMPLETO EN EL SERVIDOR. ** Mandar un mensaje directo a la Dra. Evelia Coss (coordinadora del curso) con tu nombre completo, para que el NOMBRE DEL USUARIO EN EL SERVIDOR pueda ser modificado.
+2) **Contar con su registro en el Google Form**. Primer formulario que se debió llenar en Google.
+3) ** Haber COMPLETADO el formulario GENERAL en REDCap**.
+4) ** ASISTENCIAS**. Recuerda que el formulario de asistencias llega a tu correo cada semana. El cual debes llenar y enviar. 
 
 ## Instructores 👾 
 
