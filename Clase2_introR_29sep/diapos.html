@@ -1727,7 +1727,7 @@ background-color: inherit;
 })(window, document)
 </script>
     <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x3a4f3fcb9b747288ca0f16a00d268cb","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x91c86f371074bcf9b5d8bbafdff6b99","expires":1}</script>
     <script>(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.himalaya = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
@@ -4567,7 +4567,33 @@ variable &lt;- readRDS(&quot;/path/variable.RData&quot;)
 ```
 
 ---
-### Ejercicio: cargar un dataset
+
+class: center, middle
+
+<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:3em;width:3.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 0C92.7 0 64 28.7 64 64V288H19.2C8.6 288 0 296.6 0 307.2C0 349.6 34.4 384 76.8 384H320V288H128V64H448V96h64V64c0-35.3-28.7-64-64-64H128zM512 128H400c-26.5 0-48 21.5-48 48V464c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V256H544c-17.7 0-32-14.3-32-32V128zm32 0v96h96l-96-96z"/></svg>
+# Dia 3. Introducción a R (continuación)
+
+---
+
+## Abre tu R project desde la carpeta en tu computadora, abriendo el archivo `.Rproj`
+
+---
+## Recapitulando lo último que hicimos la clase pasada:
+
+
+```r
+######
+# Script de clase &quot;Intro a R&quot;
+# Sofia Salazar
+# 3 de octubre 2023
+#######
+
+indir = &quot;/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep/&quot;
+outdir = &quot;/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep/&quot;
+```
+
+
+#### Ejercicio: cargar un dataset
 
 Ve a este [link](https://drive.google.com/file/d/1nBfZpmQNRxGMg_JeAsSKqaOPBFQur_V5/view?usp=drive_link) y descarga el archivo `planets.csv`. Asegúrate de guardarlo en el directorio donde hiciste tu Rproject.
 
@@ -4579,24 +4605,19 @@ getwd()
 
 Carga tu archivo .csv en una variable llamada `planets`
 ---
-### Ejercicio: cargar un dataset
-
-Ve a este [link](https://drive.google.com/file/d/1nBfZpmQNRxGMg_JeAsSKqaOPBFQur_V5/view?usp=drive_link) y descarga el archivo `planets.csv`. Asegúrate de guardarlo en el directorio donde hiciste tu Rproject.
 
 
 ```r
-getwd()
-# [1] &quot;/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep&quot;
+######
+# Script de clase &quot;Intro a R&quot;
+# Sofia Salazar
+# 3 de octubre 2023
+#######
+
+indir = &quot;/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep/&quot;
+outdir = &quot;/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep/&quot;
+planets &lt;- read.csv(paste0(indir,&quot;planets.csv&quot;))
 ```
-
-Carga tu archivo .csv en una variable llamada `planets`
-
-
-```r
-planets &lt;- read.csv(&quot;planets.csv&quot;)
-```
-
-Podemos accesar a las primeras n filas con el comando `head()` 
 
 
 ```r
@@ -4610,6 +4631,34 @@ head(planets, 1)
 #                                                                                                                                                                                                                                                                                                                                                                                                             desc
 # 1 Alderaan is a fictional planet featured in the Star Wars space opera franchise. It is blue-green in appearance and is depicted as a terrestrial planet with humanoid inhabitants. It is the home of Princess Leia, one of the lead characters in the film series. In the original 1977 film, Star Wars, Alderaan is blown up by the Death Star, a giant space station capable of destroying entire planets.[2]
 ```
+
+---
+
+## Ejercicio:
+
+1. Guarda tu ambiente (si no lo habías guardado la clase pasada)
+
+Con el comando:
+
+
+```r
+save.image(paste0(indir, miAmbiente1.RData))
+```
+
+**Pregunta: Por qué lo guardé en `indir`? ** 
+
+---
+
+2. Para simular que empezamos a trabajar otro día desde el checkpoint que creamos, guarda tu script, cierra Rstudio y vuelvelo a abrir desde el `.Rproj` file.
+
+3. Carga tu ambiente desde el checkpoint.
+
+
+```r
+load(paste0(indir, miAmbiente1.RData))
+```
+
+Observa como se cargan las variables `indir`, `outdir` y `planets` sin que tengas que hacer nada. **Esta es la utilidad de hacer un &quot;checkpoint&quot;.**
 
 ---
 
@@ -4631,6 +4680,18 @@ class(decimal)
 # [1] &quot;numeric&quot;
 ```
 
+Para convertir un dato a tipo `numeric` utilizamos `as.numeric()`
+
+
+```r
+numero &lt;- &quot;1&quot;
+numero &lt;- as.numeric(numero)
+class(numero)
+# [1] &quot;numeric&quot;
+```
+
+---
+
 - `character`: guardamos texto
 
 
@@ -4643,7 +4704,18 @@ class(texto2)
 # [1] &quot;character&quot;
 ```
 
+Para convertir un dato a tipo `character` utilizamos `as.character`
+
+
+```r
+ch &lt;- 2305
+ch &lt;- as.character(ch)
+class(ch)
+# [1] &quot;character&quot;
+```
+
 ---
+
 - `logical`: representan valores binarios `TRUE` o `FALSE`
 
 
@@ -4655,6 +4727,55 @@ class(val)
 # [1] &quot;logical&quot;
 ```
 
+Podemos tener una serie de &quot;frases&quot; que al final nos indiquen un valor lógico.
+
+
+```r
+library(purrr)
+arreglo1 &lt;- c()
+vacio &lt;- is_empty(arreglo1)
+vacio
+# [1] TRUE
+```
+
+
+```r
+(8 &lt;= 10) &amp; (9 != 9)
+# [1] FALSE
+```
+
+
+```r
+(8 &gt; 3) | (9 &lt; 1)
+# [1] TRUE
+```
+
+---
+
+Podemos convertir valores &quot;binarios&quot; a lógicos
+
+
+```r
+as.logical(0)
+# [1] FALSE
+```
+
+
+
+```r
+as.logical(1)
+# [1] TRUE
+```
+
+Conoce más hacerca de la función `as.logical()` con
+
+
+```r
+?as.logical
+```
+
+---
+
 - `integer`: Podemos definir enteros explícitamente
 
 
@@ -4664,6 +4785,35 @@ class(count)
 # [1] &quot;integer&quot;
 ```
 
+Convertir a entero
+
+
+```r
+entero &lt;- as.integer(3)
+class(entero)
+# [1] &quot;integer&quot;
+```
+
+Para números decimales, trunca el número hacia el cero (lo redondea hacia abajo)
+
+
+```r
+entero &lt;- as.integer(2.9)
+entero
+# [1] 2
+```
+
+Si la conversión falla, nos dará un &quot;NA&quot;
+
+
+```r
+entero &lt;- as.integer(&quot;hola&quot;)
+entero
+# [1] NA
+```
+
+---
+
 - `complex`: Podemos representar números complejos con números reales e imaginarios
 
 
@@ -4671,6 +4821,21 @@ class(count)
 z &lt;- 2 + 3i
 class(z)
 # [1] &quot;complex&quot;
+```
+
+Podemos convertir numeros normales a complejos
+
+
+```r
+as.complex(5)
+# [1] 5+0i
+```
+
+Más información:
+
+
+```r
+?as.complex
 ```
 
 ---
@@ -4710,50 +4875,7 @@ levels(group)
 ```
 
 ---
-- R tiene distintos tipos de datos de fecha y tiempo, incluyendo `Date`.
 
-
-```r
-cumple &lt;- as.Date(&quot;1990-01-23&quot;)
-class(cumple)
-# [1] &quot;Date&quot;
-```
-
----
-
-- `list`: son tipos de datos versátiles que pueden guardar distintos tipos de datos, incluyendo vectores, matrices u otras listas.
-
-
-```r
-person &lt;- list(name = &quot;Alice&quot;, age = 30, scores = c(85, 92, 78))
-person
-# $name
-# [1] &quot;Alice&quot;
-# 
-# $age
-# [1] 30
-# 
-# $scores
-# [1] 85 92 78
-```
-
-Podemos accesar a los elementos de una lista con el signo `$`
-
-
-```r
-person$age
-# [1] 30
-```
-
-En ocasiones, podemos tener una gran cantidad de elementos en una lista, podemos ver cuáles son con `names()`.
-
-
-```r
-names(person)
-# [1] &quot;name&quot;   &quot;age&quot;    &quot;scores&quot;
-```
-
----
 - `vector`: son arreglos de una dimensión, pueden guardar elementos del mismo tipo de datos. Algunos tipos comúnes de vectores son numéricos o lógicos. Determinamos los valores de un vector con `c()` &quot;concatenar&quot;
 
 
@@ -4790,7 +4912,12 @@ my_vector[my_vector&gt;24]
 # [1] 30 40 50 60
 ```
 
-**Ejercicio: accesa a la calificación 90**
+**Ejercicio: accesa a la calificación 90 con el índice**
+
+
+```r
+grades &lt;- c(88, 45, 75, 90, 100)
+```
 
 ---
 
@@ -4803,12 +4930,12 @@ my_vector[my_vector&gt;24]
 # [1] 30 40 50 60
 ```
 
-**Ejercicio: accesa a la calificación 90**
+**Ejercicio: accesa a la calificación 90 con el índice**
 
 
 ```r
-grades[90]
-# [1] NA
+grades[4]
+# [1] 90
 ```
 
 ---
@@ -4869,6 +4996,83 @@ Accesamos a una matrix con condiciones lógicas:
 matrix_a[matrix_a &gt; 2]
 # [1] 3 4 5 6
 ```
+
+---
+
+- `list`: son tipos de datos versátiles que pueden guardar distintos tipos de datos, incluyendo vectores, matrices u otras listas.
+
+
+```r
+person &lt;- list(name = &quot;Alice&quot;, age = 30, scores = c(85, 92, 78))
+person
+# $name
+# [1] &quot;Alice&quot;
+# 
+# $age
+# [1] 30
+# 
+# $scores
+# [1] 85 92 78
+```
+
+Podemos accesar a los elementos de una lista con el signo `$`
+
+
+```r
+person$age
+# [1] 30
+```
+
+En ocasiones, podemos tener una gran cantidad de elementos en una lista, podemos ver cuáles son con `names()`.
+
+
+```r
+names(person)
+# [1] &quot;name&quot;   &quot;age&quot;    &quot;scores&quot;
+```
+
+---
+
+### Lista de listas 
+
+Crearemos una lista de listas
+
+
+```r
+list_of_lists &lt;- list(
+  list(name = &quot;Alice&quot;, age = 25, scores = c(85, 92, 78)),
+  list(name = &quot;Bob&quot;, age = 30, scores = c(90, 88, 76)),
+  list(name = &quot;Charlie&quot;, age = 22, scores = c(78, 85, 92))
+)
+```
+
+Para accesar a una de las listas:
+
+
+```r
+first_person &lt;- list_of_lists[[1]]
+cat(&quot;Nombre:&quot;, first_person$name, &quot;\n&quot;)
+# Nombre: Alice
+cat(&quot;Edad:&quot;, first_person$age, &quot;\n&quot;)
+# Edad: 25
+cat(&quot;Scores:&quot;, first_person$scores, &quot;\n&quot;)
+# Scores: 85 92 78
+```
+
+**Ejercicio: Accesar al primer elemento de `scores` en el segundo individuo**
+
+---
+
+**Ejercicio: Accesar al primer elemento de `scores` en el segundo individuo**
+
+
+```r
+first_score &lt;- list_of_lists[[2]]$scores[1]
+cat(&quot;Primer score del individuo 1:&quot;, first_score, &quot;\n&quot;)
+# Primer score del individuo 1: 90
+```
+
+---
 
 ---
 `array`: los datos de este tipo extienden la concepción de matrices y vectores a más dimensiones
@@ -5399,10 +5603,10 @@ Utilizando `sample`, generamos una muestra de tamaño n. Con `replace = FALSE`, 
 n = length(rownames(planets))
 new_rownames &lt;- sample(600:700, n, replace = FALSE)
 new_rownames
-#  [1] 679 639 643 693 662 623 628 698 652 666 630 638 631 675 649 612 622 626 644
-# [20] 685 646 651 609 688 615 661 636 673 658 602 669 608 621 618 656 667 604 600
-# [39] 617 655 619 671 670 645 613 607 641 616 696 627 647 654 606 611 633 660 635
-# [58] 650 665 648 642
+#  [1] 608 603 612 697 676 693 641 609 692 651 616 677 670 690 653 615 647 626 635
+# [20] 601 652 605 689 634 629 621 654 655 660 642 622 614 683 663 686 678 643 658
+# [39] 620 600 674 648 636 623 691 638 700 656 659 682 646 637 662 680 664 666 606
+# [58] 699 667 672 618
 ```
 
 Sustituimos por los nuevos rownames
@@ -5415,12 +5619,12 @@ rownames(planets) &lt;- new_rownames
 
 ```r
 rownames(planets) 
-#  [1] &quot;679&quot; &quot;639&quot; &quot;643&quot; &quot;693&quot; &quot;662&quot; &quot;623&quot; &quot;628&quot; &quot;698&quot; &quot;652&quot; &quot;666&quot; &quot;630&quot; &quot;638&quot;
-# [13] &quot;631&quot; &quot;675&quot; &quot;649&quot; &quot;612&quot; &quot;622&quot; &quot;626&quot; &quot;644&quot; &quot;685&quot; &quot;646&quot; &quot;651&quot; &quot;609&quot; &quot;688&quot;
-# [25] &quot;615&quot; &quot;661&quot; &quot;636&quot; &quot;673&quot; &quot;658&quot; &quot;602&quot; &quot;669&quot; &quot;608&quot; &quot;621&quot; &quot;618&quot; &quot;656&quot; &quot;667&quot;
-# [37] &quot;604&quot; &quot;600&quot; &quot;617&quot; &quot;655&quot; &quot;619&quot; &quot;671&quot; &quot;670&quot; &quot;645&quot; &quot;613&quot; &quot;607&quot; &quot;641&quot; &quot;616&quot;
-# [49] &quot;696&quot; &quot;627&quot; &quot;647&quot; &quot;654&quot; &quot;606&quot; &quot;611&quot; &quot;633&quot; &quot;660&quot; &quot;635&quot; &quot;650&quot; &quot;665&quot; &quot;648&quot;
-# [61] &quot;642&quot;
+#  [1] &quot;608&quot; &quot;603&quot; &quot;612&quot; &quot;697&quot; &quot;676&quot; &quot;693&quot; &quot;641&quot; &quot;609&quot; &quot;692&quot; &quot;651&quot; &quot;616&quot; &quot;677&quot;
+# [13] &quot;670&quot; &quot;690&quot; &quot;653&quot; &quot;615&quot; &quot;647&quot; &quot;626&quot; &quot;635&quot; &quot;601&quot; &quot;652&quot; &quot;605&quot; &quot;689&quot; &quot;634&quot;
+# [25] &quot;629&quot; &quot;621&quot; &quot;654&quot; &quot;655&quot; &quot;660&quot; &quot;642&quot; &quot;622&quot; &quot;614&quot; &quot;683&quot; &quot;663&quot; &quot;686&quot; &quot;678&quot;
+# [37] &quot;643&quot; &quot;658&quot; &quot;620&quot; &quot;600&quot; &quot;674&quot; &quot;648&quot; &quot;636&quot; &quot;623&quot; &quot;691&quot; &quot;638&quot; &quot;700&quot; &quot;656&quot;
+# [49] &quot;659&quot; &quot;682&quot; &quot;646&quot; &quot;637&quot; &quot;662&quot; &quot;680&quot; &quot;664&quot; &quot;666&quot; &quot;606&quot; &quot;699&quot; &quot;667&quot; &quot;672&quot;
+# [61] &quot;618&quot;
 ```
 
 ---
@@ -5447,6 +5651,55 @@ resultado &lt;- (suma + resta) **2 # (8 + 2)^2
 resultado
 # [1] 100
 ```
+
+---
+## Antes de terminar:
+
+
+```r
+save.image(paste0(indir, miAmbiente1.RData))
+```
+
+
+
+```r
+sessionInfo()
+# R version 4.2.2 (2022-10-31)
+# Platform: x86_64-apple-darwin17.0 (64-bit)
+# Running under: macOS Big Sur ... 10.16
+# 
+# Matrix products: default
+# BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
+# LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
+# 
+# locale:
+# [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+# 
+# attached base packages:
+# [1] stats     graphics  grDevices utils     datasets  methods   base     
+# 
+# other attached packages:
+#  [1] xaringanthemer_0.4.2 emo_0.0.0.9000       fontawesome_0.5.2   
+#  [4] icons_0.2.0          xaringanExtra_0.7.0  lubridate_1.9.2     
+#  [7] forcats_1.0.0        stringr_1.5.0        dplyr_1.1.3         
+# [10] purrr_1.0.2          readr_2.1.4          tidyr_1.3.0         
+# [13] tibble_3.2.1         ggplot2_3.4.3        tidyverse_2.0.0     
+# [16] knitr_1.44          
+# 
+# loaded via a namespace (and not attached):
+#  [1] bslib_0.5.1       compiler_4.2.2    pillar_1.9.0      jquerylib_0.1.4  
+#  [5] tools_4.2.2       uuid_1.1-1        digest_0.6.33     timechange_0.2.0 
+#  [9] jsonlite_1.8.7    evaluate_0.21     lifecycle_1.0.3   gtable_0.3.4     
+# [13] pkgconfig_2.0.3   rlang_1.1.1       cli_3.6.1         rstudioapi_0.15.0
+# [17] yaml_2.3.7        xfun_0.40         fastmap_1.1.1     withr_2.5.1      
+# [21] rappdirs_0.3.3    hms_1.1.3         generics_0.1.3    sass_0.4.7       
+# [25] vctrs_0.6.3       grid_4.2.2        tidyselect_1.2.0  glue_1.6.2       
+# [29] R6_2.5.1          fansi_1.0.4       rmarkdown_2.25    xaringan_0.28    
+# [33] tzdb_0.4.0        magrittr_2.0.3    scales_1.2.1      htmltools_0.5.6  
+# [37] assertthat_0.2.1  colorspace_2.1-0  utf8_1.2.3        stringi_1.7.12   
+# [41] munsell_0.5.0     cachem_1.0.8      crayon_1.5.2
+```
+
 
 ---
 

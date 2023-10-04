@@ -520,7 +520,32 @@ variable <- readRDS("/path/variable.RData")
 ```
 
 ---
-### Ejercicio: cargar un dataset
+
+class: center, middle
+
+`r fontawesome::fa("laptop-file", height = "3em")`
+# Dia 3. Introducción a R (continuación)
+
+---
+
+## Abre tu R project desde la carpeta en tu computadora, abriendo el archivo `.Rproj`
+
+---
+## Recapitulando lo último que hicimos la clase pasada:
+
+```{r, eval = F}
+######
+# Script de clase "Intro a R"
+# Sofia Salazar
+# 3 de octubre 2023
+#######
+
+indir = "/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep/"
+outdir = "/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep/"
+```
+
+
+#### Ejercicio: cargar un dataset
 
 Ve a este [link](https://drive.google.com/file/d/1nBfZpmQNRxGMg_JeAsSKqaOPBFQur_V5/view?usp=drive_link) y descarga el archivo `planets.csv`. Asegúrate de guardarlo en el directorio donde hiciste tu Rproject.
 
@@ -530,25 +555,48 @@ getwd()
 
 Carga tu archivo .csv en una variable llamada `planets`
 ---
-### Ejercicio: cargar un dataset
-
-Ve a este [link](https://drive.google.com/file/d/1nBfZpmQNRxGMg_JeAsSKqaOPBFQur_V5/view?usp=drive_link) y descarga el archivo `planets.csv`. Asegúrate de guardarlo en el directorio donde hiciste tu Rproject.
 
 ```{r}
-getwd()
+######
+# Script de clase "Intro a R"
+# Sofia Salazar
+# 3 de octubre 2023
+#######
+
+indir = "/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep/"
+outdir = "/Users/sofiasalazar/Desktop/LAB/ViernesBioinfo/Clase2_introR_29sep/"
+planets <- read.csv(paste0(indir,"planets.csv"))
 ```
-
-Carga tu archivo .csv en una variable llamada `planets`
-
-```{r}
-planets <- read.csv("planets.csv")
-```
-
-Podemos accesar a las primeras n filas con el comando `head()` 
 
 ```{r}
 head(planets, 1)
 ```
+
+---
+
+## Ejercicio:
+
+1. Guarda tu ambiente (si no lo habías guardado la clase pasada)
+
+Con el comando:
+
+```{r, eval = F}
+save.image(paste0(indir, miAmbiente1.RData))
+```
+
+**Pregunta: Por qué lo guardé en `indir`? ** 
+
+---
+
+2. Para simular que empezamos a trabajar otro día desde el checkpoint que creamos, guarda tu script, cierra Rstudio y vuelvelo a abrir desde el `.Rproj` file.
+
+3. Carga tu ambiente desde el checkpoint.
+
+```{r, eval = F}
+load(paste0(indir, miAmbiente1.RData))
+```
+
+Observa como se cargan las variables `indir`, `outdir` y `planets` sin que tengas que hacer nada. **Esta es la utilidad de hacer un "checkpoint".**
 
 ---
 
@@ -566,6 +614,16 @@ class(num)
 class(decimal)
 ```
 
+Para convertir un dato a tipo `numeric` utilizamos `as.numeric()`
+
+```{r}
+numero <- "1"
+numero <- as.numeric(numero)
+class(numero)
+```
+
+---
+
 - `character`: guardamos texto
 
 ```{r}
@@ -575,7 +633,16 @@ class(texto)
 class(texto2)
 ```
 
+Para convertir un dato a tipo `character` utilizamos `as.character`
+
+```{r}
+ch <- 2305
+ch <- as.character(ch)
+class(ch)
+```
+
 ---
+
 - `logical`: representan valores binarios `TRUE` o `FALSE`
 
 ```{r}
@@ -584,6 +651,44 @@ val
 class(val)
 ```
 
+Podemos tener una serie de "frases" que al final nos indiquen un valor lógico.
+
+```{r}
+library(purrr)
+arreglo1 <- c()
+vacio <- is_empty(arreglo1)
+vacio
+```
+
+```{r}
+(8 <= 10) & (9 != 9)
+```
+
+```{r}
+(8 > 3) | (9 < 1)
+```
+
+---
+
+Podemos convertir valores "binarios" a lógicos
+
+```{r}
+as.logical(0)
+```
+
+
+```{r}
+as.logical(1)
+```
+
+Conoce más hacerca de la función `as.logical()` con
+
+```{r, eval = F}
+?as.logical
+```
+
+---
+
 - `integer`: Podemos definir enteros explícitamente
 
 ```{r}
@@ -591,11 +696,46 @@ count <- 42L
 class(count)
 ```
 
+Convertir a entero
+
+```{r}
+entero <- as.integer(3)
+class(entero)
+```
+
+Para números decimales, trunca el número hacia el cero (lo redondea hacia abajo)
+
+```{r}
+entero <- as.integer(2.9)
+entero
+```
+
+Si la conversión falla, nos dará un "NA"
+
+```{r}
+entero <- as.integer("hola")
+entero
+```
+
+---
+
 - `complex`: Podemos representar números complejos con números reales e imaginarios
 
 ```{r}
 z <- 2 + 3i
 class(z)
+```
+
+Podemos convertir numeros normales a complejos
+
+```{r}
+as.complex(5)
+```
+
+Más información:
+
+```{r, eval = F}
+?as.complex
 ```
 
 ---
@@ -626,35 +766,7 @@ levels(group)
 ```
 
 ---
-- R tiene distintos tipos de datos de fecha y tiempo, incluyendo `Date`.
 
-```{r}
-cumple <- as.Date("1990-01-23")
-class(cumple)
-```
-
----
-
-- `list`: son tipos de datos versátiles que pueden guardar distintos tipos de datos, incluyendo vectores, matrices u otras listas.
-
-```{r}
-person <- list(name = "Alice", age = 30, scores = c(85, 92, 78))
-person
-```
-
-Podemos accesar a los elementos de una lista con el signo `$`
-
-```{r}
-person$age
-```
-
-En ocasiones, podemos tener una gran cantidad de elementos en una lista, podemos ver cuáles son con `names()`.
-
-```{r}
-names(person)
-```
-
----
 - `vector`: son arreglos de una dimensión, pueden guardar elementos del mismo tipo de datos. Algunos tipos comúnes de vectores son numéricos o lógicos. Determinamos los valores de un vector con `c()` "concatenar"
 
 ```{r}
@@ -684,7 +796,11 @@ my_vector <- c(10, 20, 30, 40, 50, 60)
 my_vector[my_vector>24]
 ```
 
-**Ejercicio: accesa a la calificación 90**
+**Ejercicio: accesa a la calificación 90 con el índice**
+
+```{r}
+grades <- c(88, 45, 75, 90, 100)
+```
 
 ---
 
@@ -695,10 +811,10 @@ my_vector <- c(10, 20, 30, 40, 50, 60)
 my_vector[my_vector>24]
 ```
 
-**Ejercicio: accesa a la calificación 90**
+**Ejercicio: accesa a la calificación 90 con el índice**
 
 ```{r}
-grades[90]
+grades[4]
 ```
 
 ---
@@ -743,6 +859,63 @@ Accesamos a una matrix con condiciones lógicas:
 ```{r}
 matrix_a[matrix_a > 2]
 ```
+
+---
+
+- `list`: son tipos de datos versátiles que pueden guardar distintos tipos de datos, incluyendo vectores, matrices u otras listas.
+
+```{r}
+person <- list(name = "Alice", age = 30, scores = c(85, 92, 78))
+person
+```
+
+Podemos accesar a los elementos de una lista con el signo `$`
+
+```{r}
+person$age
+```
+
+En ocasiones, podemos tener una gran cantidad de elementos en una lista, podemos ver cuáles son con `names()`.
+
+```{r}
+names(person)
+```
+
+---
+
+### Lista de listas 
+
+Crearemos una lista de listas
+
+```{r}
+list_of_lists <- list(
+  list(name = "Alice", age = 25, scores = c(85, 92, 78)),
+  list(name = "Bob", age = 30, scores = c(90, 88, 76)),
+  list(name = "Charlie", age = 22, scores = c(78, 85, 92))
+)
+```
+
+Para accesar a una de las listas:
+
+```{r}
+first_person <- list_of_lists[[1]]
+cat("Nombre:", first_person$name, "\n")
+cat("Edad:", first_person$age, "\n")
+cat("Scores:", first_person$scores, "\n")
+```
+
+**Ejercicio: Accesar al primer elemento de `scores` en el segundo individuo**
+
+---
+
+**Ejercicio: Accesar al primer elemento de `scores` en el segundo individuo**
+
+```{r}
+first_score <- list_of_lists[[2]]$scores[1]
+cat("Primer score del individuo 1:", first_score, "\n")
+```
+
+---
 
 ---
 `array`: los datos de este tipo extienden la concepción de matrices y vectores a más dimensiones
@@ -949,6 +1122,19 @@ Podemos realizar operaciones con variables, constantes y/o expresiones, solo rec
 resultado <- (suma + resta) **2 # (8 + 2)^2
 resultado
 ```
+
+---
+## Antes de terminar:
+
+```{r, eval = F}
+save.image(paste0(indir, miAmbiente1.RData))
+```
+
+
+```{r}
+sessionInfo()
+```
+
 
 ---
 
