@@ -1,4 +1,4 @@
-# VieRnes de Bioinformatica
+# VieRnes de Bioinformática
 
 Primera edición 💜
 
@@ -6,7 +6,7 @@ Primera edición 💜
 
 Fomentar la formación y crecimiento en bioinformática a través de cursos gratuitos para toda la comunidad interesada.    
 
-## Informacion sobre horarios 💻
+## Información sobre horarios 💻
 
 - Viernes de 11 am a 1 pm CDMX (GMT-6), el horario puede variar unos dias dependiendo del instructor.
 - Inicio: 22 de septiembre de 11 am a 1 pm.
@@ -16,7 +16,7 @@ Fomentar la formación y crecimiento en bioinformática a través de cursos grat
 
 ### Verifica tu horario
 
-- **CDMX (GMT-6)** - 11 am - 1 pm
+- **CDMX (GMT-6)** - 11 am - 1 pm (Sede del curso)
 - **Nicaragua, Manágua (GMT -6)**  - 11 am - 1 pm
 - **El Salvador (GMT -6)**  - 11 am - 1 pm
 - **Perú, Lima (GMT -5)**  - 12 pm  - 2 pm
@@ -27,14 +27,26 @@ Fomentar la formación y crecimiento en bioinformática a través de cursos grat
 - **Chile, Santiago  (GMT -3)** - 2 pm  - 4 pm
 - **Uruguay, Montevideo (GMT -3)** - 2 pm  - 4 pm
 
-## Inscripcion
+## Inscripción
 
-Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0KvJMrEG_GkOhJ4lO99d2OGJaED1966GmPh27JpV5Vg/viewform
+Los cursos se imparten cada viernes, se les pide que se inscriban máximo el **JUEVES A LAS 6 PM**. Solicitudes recibidas posterior a este día y hora, *no podrán asistir al viernes de esa semana*.
+
+Da click en el siguiente link: https://forms.gle/yMZoQA4SNw8D2K6y9
+
+Para cualquier duda o problema mandar un correo a la coordinadora del curso, la Dra. Evelia Coss (ecoss@liigh.unam.mx).
+
+## Entrega de Diplomas
+
+Se otorgará un diploma a los participantes que cuenten con el **80 % de las asistencias** emitido por el LIIGH-UNAM, teniendo como representante a la Dra. Maria Avila.
+
+Posterior a tu inscripción en el [Google form](https://forms.gle/yMZoQA4SNw8D2K6y9) se enviara al mismo correo registrado un formulario GENERAL proveniente de REDCap, verifica el SPAM en caso de no encontrarlo en tu bandeja de entrada. Este formulario se enviará máximo 1 o 2 días posteriores a tu inscripción, SOLO si te inscribiste antes del *JUEVES A LAS 6 PM*. **Las solicitudes recibidas posteriormente a este día y hora, recibirán el formulario posterior a la clase.**
+
+La asistencia se captura en REDCap llenando los formularios que se te envíen, los cuales tienen un tiempo de caducidad de 7 días a partir de la recepción del correo. 
 
 ## Instructores 👾 
 
-- Dr. Domingo Matinez
 - Dra. Evelia Coss
+- Dr. Domingo Matinez
 - Ing. Jair Santiago Garcia Sotelo
 - LCG. Sofia Salazar
 - M.C. Ana Hernandez
@@ -83,6 +95,17 @@ Da click en el siguiente link: https://docs.google.com/forms/d/e/1FAIpQLSfZs6S0K
   - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
   - [R for beginners](https://drive.google.com/file/d/1iCRDCXB5wzSzbpk0LJjPpYutluKTSlTp/view?usp=sharing)
 
+### Viernes 2: Introducción a R, parte 2
+
+- Fecha: Viernes 6 de Octubre 2023
+- Instructora: [LCG. Sofia Salazar](https://github.com/SophSM)
+- Presentación: 
+  - [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1)
+  - Introducción a R, parte 2
+- Grabación: 
+- Lecturas y cursos recomendados:
+  - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
+  - [R for beginners](https://drive.google.com/file/d/1iCRDCXB5wzSzbpk0LJjPpYutluKTSlTp/view?usp=sharing)
 
 ## Licencia y términos de uso
 
@@ -93,7 +116,7 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0](h
 
 ## Agradecimientos
 
-Queremos agradecer al [LIIGH - UNAM](https://liigh.unam.mx) por el apoyo y facilidades prestadas para poder impartir estos cursos. Queremos  explícitamente agradecer, de manera muy especial, a la Dra. Maria Avila, la Dra, Alejandra Medina y Licenciada Eglee Lomelin por su extraordinaria labor y por impulsar estos cursos para el crecimiemnto de todos.
+Queremos agradecer al [LIIGH - UNAM](https://liigh.unam.mx) por el apoyo y facilidades prestadas para poder impartir estos cursos. Queremos  explícitamente agradecer, de manera muy especial, a la [Dra. Maria Avila](https://liigh.unam.mx/profile/dra-maria-c-avila-arcos/), la [Dra, Alejandra Medina-Rivera](https://liigh.unam.mx/profile/dra-alejandra-medina-rivera/) y Licenciada Eglee Lomelin por su extraordinaria labor y por impulsar estos cursos para el crecimiemnto de todos.
 
 -------------
 
