@@ -12,7 +12,7 @@ Fomentar la formación y crecimiento en bioinformática a través de cursos grat
 - Inicio: 22 de septiembre de 11 am a 1 pm.
 - Clases hibridas en el aula de Bioinformatica de LIIGH y Zoom.
 - Intentaremos grabar las sesiones 📹.
-- Este curso de contempla finalizar hasta diciembre de 2023.
+- Este curso de contempla finalizar hasta marzo de 2024 (1 semestre).
 
 ### Verifica tu horario
 
