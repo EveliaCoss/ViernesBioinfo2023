@@ -41,7 +41,7 @@ Se otorgará un diploma a los participantes que cuenten con el **80 % de las asi
 
 Posterior a tu inscripción en el [Google form](https://forms.gle/yMZoQA4SNw8D2K6y9) se enviara al mismo correo registrado un formulario GENERAL proveniente de REDCap, verifica el SPAM en caso de no encontrarlo en tu bandeja de entrada. Este formulario se enviará máximo 1 o 2 días posteriores a tu inscripción, SOLO si te inscribiste antes del *JUEVES A LAS 6 PM*. **Las solicitudes recibidas posteriormente a este día y hora, recibirán el formulario posterior a la clase.**
 
-La asistencia se captura en REDCap llenando los formularios que se te envíen, los cuales tienen un tiempo de caducidad de 7 días a partir de la recepción del correo. 
+La asistencia se captura en REDCap llenando los formularios que se te envíen los dias miercoles o jueves, los cuales tienen un tiempo de caducidad de algunos días a partir de la recepción del correo. 
 
 ## Instructores 👾 
 
