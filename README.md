@@ -50,7 +50,7 @@ El enlace de Discord se te envía por correo, máximo 1 o dos días posteriores 
 
 Se les solicita a los participantes respetar las **reglas y código de conducta presentes en el servidor de Discord**. Además, se les solicita como medidas de seguridad para todos los participantes presentes en el servidor:
 
-1.    **Contar con un NOMBRE COMPLETO EN EL SERVIDOR ** . Mandar un mensaje directo a la Dra. Evelia Coss (coordinadora del curso) con tu nombre completo, para que el NOMBRE DEL USUARIO EN EL SERVIDOR pueda ser modificado.
+1. **Contar con un NOMBRE COMPLETO EN EL SERVIDOR**. Mandar un mensaje directo a la Dra. Evelia Coss (coordinadora del curso) con tu nombre completo, para que el NOMBRE DEL USUARIO EN EL SERVIDOR pueda ser modificado.
 2.  **Contar con su registro en el [Google Form](https://forms.gle/yMZoQA4SNw8D2K6y9).** Primer formulario que se debió llenar en Google.
 3.  **Completar el cuestionario GENERAL en REDCap**. El formulario debe llegar al mismo correo que usaste para inscribirte al curso. Este formulario se enviará máximo 1 o 2 días posteriores a tu inscripción, SOLO si te inscribiste antes del JUEVES A LAS 6 PM. El link es único y no debe compartirse, ya que es por cada record ID, verifica el SPAM en caso de no encontrarlo en tu bandeja de entrada. 
 4.    **Confirma tu asistencia cada jueves en REDCap**. También llega el formulario a tu correo. Los formularios que no completes, se reflejan en inasistencias o faltas en los cursos. **Solo se otorgará un diploma a los participantes que cuenten con el 80 % de las asistencias emitido por el LIIGH, teniendo como representante a la Dra. Maria Avila.**
