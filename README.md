@@ -104,7 +104,9 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Fecha: Viernes 29 de Septiembre 2023
 - Instructora: [LCG. Sofia Salazar](https://github.com/SophSM)
 - Presentación: [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1)
-- Grabación: [Viernes2](https://drive.google.com/file/d/1BKA--h-Pssc64Kr3SKoGAD6b_KgGq78V/view?usp=sharing) 
+- Grabación:
+    - [Viernes 2- En vivo Clase](https://drive.google.com/file/d/1BKA--h-Pssc64Kr3SKoGAD6b_KgGq78V/view?usp=sharing)
+    - [Video de Sofi](https://drive.google.com/file/d/1apAC433KI4AKjjC2cV9_XiRDifOq2thJ/view?usp=sharing)
 - Lecturas y cursos recomendados:
   - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
   - [R for beginners](https://drive.google.com/file/d/1iCRDCXB5wzSzbpk0LJjPpYutluKTSlTp/view?usp=sharing)
