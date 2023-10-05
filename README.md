@@ -73,8 +73,8 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Viernes 1. [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1) (22/sep/2023) - Dra. Evelia Coss
 - Viernes 2. [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1) (29/sep/2023) - LCG. Sofia Salazar
 - Viernes 3. Introducción a R, parte 2 (06/oct/2023) - LCG. Sofia Salazar
-- Viernes 4. Manipulación y limpieza de datos con dplyr y tidyr / Creando funciones en R (13/oct/2023) - Dra. Evelia Coss
-- Viernes 5. Condicionales y loops en R (20/oct/2023) - Dra. Evelia Coss
+- Viernes 4. Manipulación de datos con R /(13/oct/2023) - Dra. Evelia Coss
+- Viernes 5. El ABC de las funciones y loops en R (20/oct/2023) - Dra. Evelia Coss
 - Viernes 6. Visualización grafica con ggplot2 (27/oct/2023) - Fernanda Miron
 - Viernes 7. Exploracion de datos y eleccion de pruebas o modelos (por confirmar fecha) - Dr. Domingo Matinez
 - Viernes 7. Uso del cluster y tus primeros pasos en bash (por confirmar fecha) - Ing. Jair Santiago Garcia Sotelo
@@ -111,7 +111,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
   - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
   - [R for beginners](https://drive.google.com/file/d/1iCRDCXB5wzSzbpk0LJjPpYutluKTSlTp/view?usp=sharing)
 
-### Viernes 2: Introducción a R, parte 2
+### Viernes 3: Introducción a R, parte 2
 
 - Fecha: Viernes 6 de Octubre 2023
 - Instructora: [LCG. Sofia Salazar](https://github.com/SophSM)
@@ -122,6 +122,15 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Lecturas y cursos recomendados:
   - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
   - [R for beginners](https://drive.google.com/file/d/1iCRDCXB5wzSzbpk0LJjPpYutluKTSlTp/view?usp=sharing)
+
+### Viernes 4. Manipulación de datos con R
+
+- Fecha: Viernes 13 de Octubre 2023
+- Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
+- Presentación: 
+  - Manipulación de datos con R
+- Grabación: 
+- Lecturas y cursos recomendados:
 
 ## Licencia y términos de uso
 
