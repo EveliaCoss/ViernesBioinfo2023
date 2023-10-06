@@ -66,7 +66,8 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - M.C. Ana Hernandez
 - LBT. Fernanda Miron
 - Jazmin Lopez Chacon
-- Oscar Aldana 
+- Oscar Aldana
+- M.C Alejandra Shafer
 
 ## Contenido 📌
 
@@ -80,7 +81,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Viernes 7. Uso del cluster y tus primeros pasos en bash (por confirmar fecha) - Ing. Jair Santiago Garcia Sotelo
 - Sabado. Shiny app (11/nov/2023) - Jazmin Lopez Chacon (10 am - 1pm)
 - Viernes 8. (17/nov/2023) - 
-- Viernes 9. (24/nov/2023) - 
+- Viernes 9. Rmarkdown (24/nov/2023) - M.C Alejandra Shafer 
 - Viernes 10. Llamado de variantes geneticas, parte 1  (1/dic/2023) - M.C. Ana H 
 - Viernes 11. Llamado de variantes geneticas, parte 2  (8/dic/2023) - M.C. Ana H
 - Sabado. Empleo de REDCap (09/dic/2023) - Oscar Aldana (11 am - 1pm)
