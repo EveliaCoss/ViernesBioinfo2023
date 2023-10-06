@@ -978,7 +978,7 @@ colnames(df)
 planets$orbital_period
 ```
 
-**Ejercicio: Determina el tipo de dato de la columna**
+**Ejercicio: Determina el tipo de dato de la columna "orbital_period"**
 
 ```{r}
 class(planets$orbital_period)
