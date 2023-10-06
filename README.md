@@ -115,9 +115,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 - Fecha: Viernes 6 de Octubre 2023
 - Instructora: [LCG. Sofia Salazar](https://github.com/SophSM)
-- Presentación: 
-  - [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1)
-  - Introducción a R, parte 2
+- Presentación: [Introducción a R, parte 2](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#31)
 - Grabación: 
 - Lecturas y cursos recomendados:
   - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
