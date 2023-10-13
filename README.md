@@ -130,7 +130,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Presentación: 
   - [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/D4_ManipulacionDeDatos.html#1)
   - [Rscript](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/Clase4_VieRnesBioinfo_EveliaCoss.R)
-- Grabación: 
+- Grabación: [Viernes 4 - En vivo](https://drive.google.com/file/d/1xA9E2h-Q1USZnjPSkixJoOooDOY-mNfd/view?usp=sharing)
 - Lecturas y cursos recomendados:
   - [dplyr Github](https://github.com/tidyverse/dplyr)
   - [Keep or drop columns using their names and types](https://dplyr.tidyverse.org/reference/select.html)
