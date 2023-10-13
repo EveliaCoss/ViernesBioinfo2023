@@ -121,13 +121,15 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Lecturas y cursos recomendados:
   - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
   - [R for beginners](https://drive.google.com/file/d/1iCRDCXB5wzSzbpk0LJjPpYutluKTSlTp/view?usp=sharing)
-
+  - [R para principiantes](https://bookdown.org/jboscomendoza/r-principiantes4/)
+      
 ### Viernes 4. Manipulación de datos con R
 
 - Fecha: Viernes 13 de Octubre 2023
 - Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
 - Presentación: 
-  - Manipulación de datos con R
+  - [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/D4_ManipulacionDeDatos.html#1)
+  - [Rscript](https://eveliacoss.github.io/ViernesBioinfo/Clase4_VieRnesBioinfo_EveliaCoss.R)
 - Grabación: 
 - Lecturas y cursos recomendados:
 
