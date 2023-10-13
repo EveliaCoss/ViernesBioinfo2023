@@ -132,6 +132,8 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
   - [Rscript](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/Clase4_VieRnesBioinfo_EveliaCoss.R)
 - Grabación: 
 - Lecturas y cursos recomendados:
+  - [dplyr Github](https://github.com/tidyverse/dplyr)
+  - [Keep or drop columns using their names and types](https://dplyr.tidyverse.org/reference/select.html)
 
 ## Licencia y términos de uso
 
