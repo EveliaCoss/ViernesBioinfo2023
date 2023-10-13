@@ -1,0 +1,610 @@
+---
+title: "Manipulación de datos en R"
+subtitle: "⚔<br/>Nivel básico"
+author: "Dra. Evelia Coss"
+institute: "VieRnes de Bioinformatica"
+date: "2023/09/22"
+output:
+  xaringan::moon_reader:
+    css: 
+      - xaringan-themer.css
+      - css/mi-tema.css
+      - default
+      - rladies
+      - rladies-fonts 
+    lib_dir: libs
+    seal: false
+    self_contained: true
+    nature:
+      highlightStyle: googlecode
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+      beforeInit: "macros.js"
+      slideNumberFormat: "%current%/%total%"           # Numeracion de paginas en el estilo 12/42 
+
+---
+```{r setup, include = FALSE}
+# Setup chunk
+# Paquetes a usar
+#options(htmltools.dir.version = FALSE) cambia la forma de incluir código, los colores
+
+library(knitr)
+library(tidyverse)
+library(xaringanExtra)
+library(icons)
+library(fontawesome)
+library(emo)
+
+# set default options
+opts_chunk$set(collapse = TRUE,
+               dpi = 300,
+               warning = FALSE,
+               error = FALSE,
+               comment = "#")
+
+top_icon = function(x) {
+  icons::icon_style(
+    icons::fontawesome(x),
+    position = "fixed", top = 10, right = 10
+  )
+}
+
+knit_engines$set("yaml", "markdown")
+
+# Con la tecla "O" permite ver todas las diapositivas
+xaringanExtra::use_tile_view()
+# Agrega el boton de copiar los códigos de los chunks
+xaringanExtra::use_clipboard()
+
+# Crea paneles impresionantes 
+xaringanExtra::use_panelset()
+
+# Para compartir e incrustar en otro sitio web
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin")
+)
+
+# Funcionalidades de los chunks, pone un triangulito junto a la línea que se señala
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+
+# Agregar web cam
+
+xaringanExtra::use_webcam()
+```
+
+```{r xaringan-editable, echo=FALSE}
+# Para tener opciones para hacer editable algun chunk
+xaringanExtra::use_editable(expires = 1)
+# Para hacer que aparezca el lápiz y goma
+xaringanExtra::use_scribble()
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+# Establecer colores para el tema
+library(xaringanthemer)
+#style_mono_light(base_color = "#562457")
+```
+
+class: title-slide, middle, center
+background-image: url(imagenes/liigh_unam_logo.png) 
+background-position: 10% 10%
+background-size: 15% 
+
+
+.center-column[
+# `r rmarkdown::metadata$title`
+### `r rmarkdown::metadata$subtitle`
+
+####`r rmarkdown::metadata$author` 
+#### `r rmarkdown::metadata$date`
+]
+
+---
+
+## Paquetes necesarios
+
+```{r, eval = FALSE}
+install.packages("dplyr")    # Manipulación de datos
+install.packages("tidyr")    # Manipulación de datos
+install.packages("tidyverse")# Manipulación de datos
+
+install.packages("reshape2") # Transformación de datos
+install.packages("ggplot2")  # Visualización grafica
+install.packages("cowplot")  # Generar varios graficos en una misma figura
+```
+
+---
+
+## Cargar paquetes
+
+```{r message=FALSE}
+library(dplyr)     # Manipulación de datos
+library(tidyr)     # Manipulación de datos
+library(tidyverse) # Manipulación de datos
+
+library(reshape2)  # Transformación de datos
+library(cowplot)   # Visualización grafica
+library(ggplot2)   # Generar varios graficos en una misma figura
+```
+
+---
+
+class: center, middle
+
+`r fontawesome::fa("code", height = "3em")`
+# Estructura de datos / Tipos de datos
+
+---
+
+## Existen 5 estructuras de datos en R
+
+Las estructuras de datos son objetos que contienen datos. Cuando trabajamos con R, lo que estamos haciendo es manipular estas estructuras.
+
+| Tipo        | Declaración de la variable       | Conversión       | Dimensiones  | Contenido               |
+|-------------|----------------------------------|------------------|--------------|-------------------------|
+| Vector      | c(), seq(), rep(), valorI:valorN; seq_len() | as.vector()      |  1           | homogénea               |
+| Lists       | list()                           | as.list()        |  1*          | homogénea               |
+| Matrix      | matrix(valores, nrow=x, ncol=y)  | as.matrix()      |  2           | heterogénea             |
+| Dataframe   | data.frame()                      | as.dataframe()   |  2           | heterogénea             |
+
+Tambien estan los `array` pero son poco usados en R.
+
+Para conocer la estructura del archivo debes usar `str()`.
+
+Una lista puede contener matrices en su interior, vectores, funciones, etc.
+
+---
+
+.center[
+<img src = "imagenes/DataStructure2.png", height = "400">
+]
+
+---
+
+## Recordatorio: Clases de variables
+
+| Clases    | Declaración de la variable    | Conversión de formato  |                   Reglas                                     |
+|-----------|------------------------------|-------------------------|--------------------------------------------------------------|
+| numeric   | `numeric()`                  | `as.numeric()`          | FALSE -> 0, TRUE -> 1; "1", "2", ... -> 1,2, ...; "A" -> NA  |
+| integer   | `integer()`                  | `as.integer()`          | FALSE -> 0, TRUE -> 1; "1", "2", ... -> 1,2, ...; "A" -> NA  |
+| double    | `double()`                   | `as.double()`           |                                                              |
+| character | `character()`                | `as.character()`        |  1,2, ... -> "1", "2", ...; FALSE -> "FALSE"; TRUE -> "TRUE"|
+| logical   | `logical()`                  | `as.logical()`          | 0 -> FALSE, other numbers -> TRUE; ("FALSE", "F") -> FALSE; ("TRUE", "T") -> TRUE, other character -> NA|
+| factor    | `factor()`                   | `as.factor()`           |                                                             |
+
+Si queremos saber la clase de la variable debemos usar `class()`, aunque tambien `str()` te dice esta información. 
+
+> NOTA: `as.integer()` convierte los numeros a enteros. Ejemplo: as.integer(2.5) = 2. En cambio, `as.double()` permite que los numeros contengan decimales.
+
+.left[.footnote[.black[
+R for beginners, Página 24
+]]]
+
+---
+
+## Recordatorio: Operadores
+
+| Aritméticos              | Comparación               | Argumentos lógicos (Logical Operators)   |
+|--------------------------|---------------------------|------------------------------------------|
+| `+`  Adición / suma      | `<`  Menor que            | `!x`  - Not x (logical NOT)              |  
+| `-`  Sustracción / resta | `>`  Mayor que            | `x & y` OR `x AND y` -  (logical AND)    |                
+| `*`  Multiplicación      | `<=` Menor o igual que    | `x && y`  - identico                     |
+| `/` OR %% División       | `>=`  Mayor o igual que   | `xor(x,y)`  Funcion OR                   |
+| `^` OR ** Exponencial    | `==`  Igual a             | `%in%` pertenece a                       | 
+| `%/%` División integral  | `!=`  Diferente de        |                                          |
+
+Otra forma de escrir OR es `x | y` OR `x || y`.
+
+.left[.footnote[.black[
+R for beginners, Página 25
+]]]
+
+---
+## Jerarquía de operaciones
+
+En R, al igual que en matemáticas, las operaciones tienen un orden de evaluación definido.
+
+Cuanto tenemos varias operaciones ocurriendo al mismo tiempo, en realidad, algunas de ellas son realizadas antes que otras y el resultado de ellas dependerá de este orden.
+
+
+| Orden |  Operadores             | 
+|-------|-------------------------|
+| 1     |  `^`                    |
+| 2     | `* /`                   |
+| 3	    | `+ -`                   |
+| 4	    | `< > <= >= == !=`       |
+| 5     | `!`                     |
+| 6	    | `&`                     |
+| 7	    | OR                      |
+
+---
+
+## Funciones básicas en R 
+
+| Función        | Empleo              | Documentación | Ejemplos   |
+|----------------|---------------------|---------------|------------|
+| `sum()`        | Adición / suma      |  `?sum`       | sum(2,7)   |
+| `prod()`       | Multiplicación |  `?prod`      | prod(9,2)  |
+| `max()`        | Valor máximo        |  `?max`       | max(c(1,2,3,4,5))|
+| `min()`        | Valor mínimo        |  `?min`       | min(1:5)         |
+| `range()`      | Rango               |  `?range`     | range(c(2,8,7,6,1)) |
+| `mean()`       | Promedio            |  `?mean`      | mean(c(2,8,7,6,1))         |
+| `median()`     | Mediana             |  `?median`    | median(c(2,8,7,6,1))         |
+| `var()`        | Varianza            |  `?var`       | var(1:10); var(1:5, 1:5) |
+| `cov()`        | Covarianza          |  `?cov`       | cov(1:10, 2:11)|
+| `cor()`        | Matriz de correlación  | `?cor`     | cor(1:10, 2:11)|
+
+Existen otras funciones matematicas como `log(), exp(),log10(), log2(), sin(), cos(), tan(), asin(), acos(), atan(), abs(), sqrt()`, etc.
+
+---
+
+## Funciones básicas en R 
+
+| Función        | Empleo                                     | Documentación | Ejemplos                       |
+|----------------|--------------------------------------------|---------------|--------------------------------|
+| `unique()`     | Valor unico                                | ?unique       | unique(df$expression)          |
+| `sort()`       | Ordenar                                    | ?sort         | sort(df$expression)            |
+| `order()`      | Ordenar                                    | ?order        | df[order(df$expression),]      |
+| `table()`      | cuentas de cada valor en tablas, la columna debe ser factor            | ?table        | table(df$expression)                      |
+| `subset()`  | Extraer información de una MATRIZ o DATAFRAME | ?subset       | subset(df, expression == 1.8)  |
+| `sample()`     | Extraer información de manera aleatoria    | ?sample       | sample(df$expression, size =3) | 
+| `length()`     | Número de elementos de un VECTOR           | ?length       | length(df$expression)          |
+| `dim()`        | Dimensiones de una MATRIZ o DATAFRAME      | ?dim          | dim(df)                        |
+| `is.na()`      | Es un valor NA?                            | ?is.na        | is.na(df)                      |
+| `t()`          | Cambiar filas por columnas (transposición) | ?t            | t(df)                          |
+
+.left[.footnote[.black[
+R for beginners, Página 32
+]]]
+
+
+---
+
+name: en-vivo
+background-color: var(--morado-claro)
+class: middle, center, inverse
+
+`r fontawesome::fa("laptop-file", height = "3em")`
+# Manipulación de datos con R base
+
+---
+## Ejercicio: Vector
+
+```{r  eval=FALSE}
+ClaseBioinfo <- c("Jose Luis", "Diego", "Rosita", "Yuri", 
+                  "Ulises", "Tere", "Chucho")
+ClaseBioinfo
+
+str(ClaseBioinfo) # Ver estructura
+ClaseBioinfo =="Ulises"
+ClaseBioinfo =="Chucho"
+```
+
+Cuando son mas de un valor usamos `%in%`
+
+```{r eval=FALSE}
+ClaseBioinfo %in% c("Ulises", "Chucho")
+```
+
+---
+## Ejercicio: Dataframe
+
+```{r}
+df <- data.frame(genes = paste0("Gen", seq_len(8)), 
+                 expression = c(3.8, 5.5, 6.3, 1.8, 9, rep(3,3)), 
+                 treatment =c(rep("Control", 4), rep("Condicion1",4)))
+```
+
+1) Modifica la columna 3 perteneciente a tratamiento (treatment) a factor.
+
+```{r}
+df$treatment <- as.factor(df$treatment) # conversion a factor
+```
+
+2) Renombra las filas con los nombres de los genes y elimina la columna 1.
+
+```{r}
+rownames(df) <- df$genes # renombrar
+df <- df[,-1] # eliminar columna 1
+```
+
+
+---
+class: center, middle
+
+`r fontawesome::fa("code", height = "3em")`
+# Indexado en R
+
+---
+
+## Index
+
+.pull-left[
+Por medio de un **index** podemos: 
+
+- 1) Obtener la información de un dato en específico.
+- 2) Modificar un dato en específico.
+- 3) Eliminarlo un dato en específico.
+
+Podemos hacer la pregunta de dos maneras, 1) ¿Cuál es el nivel de expresión del Gen2? O 2) ¿Que gen contiene una expresión de 5.5?
+]
+
+.center[.pull-right[
+<img src = "figures/dataframe_ejemplo.png", height = "400">]]
+
+---
+
+## Ejercicios
+
+1) **¿Cuál es el nivel de expresión del Gen2?**
+
+> NOTA: Recuerda que un dataframe tiene dos dimensiones 1) fila y 2) columna, dataframe[fila, columna]. Estos nos ayudaran como coordenadas en el dataframe.
+
+```{r}
+# Opcion A
+df[2,1]
+
+# Opcion B
+df$expression[2]
+
+# Opcion C
+df["Gen2",]
+df["Gen2",1]
+
+# Opcion D
+df["Gen2","expression"]
+```
+
+---
+
+## Ejercicios
+
+2) **¿Que gen contiene una expresión de 1.8?**
+
+.pull-left[
+
+```{r}
+# Opcion A
+df[df[, "expression"] == 1.8,]
+df[df[, 1] == 1.8,]
+
+# Opcion B
+df[df == 1.8,]
+```
+]
+
+.pull-left[
+```{r}
+# Opcion C
+df[df$expression == 1.8,]
+
+# Opcion D
+subset(df, expression == 1.8)
+```
+
+]
+
+---
+class: center, middle
+
+`r fontawesome::fa("code", height = "3em")`
+# Marvel vs DC comics
+
+.center[.pull-right[
+<img src = "logos/Marvel_Logo.png", height = "250">]
+]
+
+.center[.pull-left[
+<img src = "logos/DC-comic-1.png", height = "250">]
+]
+
+---
+## Paqueterias importantes en la Manipulación de datos en R
+
+- Tidyverse packages
+  - tidyr
+  - dplyr
+  - ggplot2
+  - readr
+  - purrr
+  - tibble
+  - stringr
+  - forcats
+  
+Cada paquete contiene sus propias instalaciones, aunque al instalar el paquete `Tidyverse`, algunas funciones podrían compartirse con los demás paquetes. 
+
+> **NOTA:** Cuando queremos evitar chocar entre paquetes indicamos de donde viene la funcion, ejemplo: `dplyr::select()`.
+
+Para más información pueden visitar su [sitio web](https://www.tidyverse.org/packages/).
+
+---
+
+##  %>% pipeline
+
+Empleando el paquete `Tidyverse` y `dplyr` puedes acceder a usar `%>%`, el cual nos permitirá enlazar funciones en la modificación de un dataframe. 
+
+```{r}
+df %>% head()
+```
+
+---
+
+## Archivo tipo `Tibble`
+
+Cuando trabajamos con los paquetes provenientes de `Tidyverse` los archivos de salida por lo regular son tipo `tibble`, que es parecido a un dataframe, pero puede chocar con algunas paqueterias para manipulacion de dataframe.
+
+Por lo que regularmente convertimos esta salida a dataframe usando `as.data.frame()`
+
+
+Para más información revisa el paquete [tibble](https://tibble.tidyverse.org/).
+
+---
+## Funciones que vamos a emplear de `dplyr`
+
+.content-box-gray[
+- `select()` : Seleccionar nombres de las columnas. --> select(dataframe, columna1, columna2, ... columnax)
+- `filter()` : Filtrar filas por una condicion especifica, apartir de la columna. --> filter(dataframe, columna1 == "condicion")
+- `mutate()` : Modificar o agregar columnas. --> mutate(dataframe, columna1 = "condicion")
+- `group_by()` : Agrupar informacion de acuerdo a un(as) columna(s) seleccionada(s). 
+- `if_else()` : Condicional. --> if_else(dataframe, codicion, si se acepta entonces, si se rechaza entonces)
+- `arrange()` : Acomodar los resultados, default de menor a mayor.
+- `count()`: Cuenta los valores de acuerdo a una variable.
+- `left_join()` : Unir dos dataframe con base en una misma columna en comun. --> left_join(dataframe1, dataframe2, by  = "Columna en comun, mismo nombre")
+- `n_distinct()` : Cuenta las filas unicas.
+- `distinct()` : Muestra las filas duplicadas.
+- `summarise()` : reduce varios valores seleccionados en un resumen.
+]
+
+Para más información visita el [Github del paquete dplyr](https://github.com/cran/dplyr).
+
+Para ver todas las funciones existentes del paquete puede ver el [Cheat Sheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/thumbnails/data-transformation-cheatsheet-thumbs.png).
+
+---
+
+## Funciones que vamos a emplear de `reshape2`
+
+.content-box-gray[
+- `melt()` : Modificación el formato de un dataframe.
+]
+
+Para más información visita el [Github del paquete reshape2](https://github.com/cran/reshape2). Aunque este paquete se encuentra descontinuado, aun funcionan las funciones. Fue absorbido posteriormente por el paquete `tidyr`.
+
+Se supone que la función `gather()` del paquete `tidyr` realiza lo mismo que `melt()` del paquete `reshape2`.
+
+Para más información visita el [Github del paquete tidyr](https://tidyr.tidyverse.org/).
+
+---
+
+## Nombres de las filas y columnas en un dataframe
+
+Para conocer el nombre de las **filas** se usa la función `rownames()`.
+
+```{r eval=FALSE}
+rownames(infoCharacters)
+```
+
+En este dataframe los nombres de las filas son numéricas empezando de 1 hasta 734.
+
+Para conocer el nombre de las **columnas** se usa la función `colnames()`.
+
+```{r eval=FALSE}
+colnames(infoCharacters)
+```
+
+> **Ejercicio:** Obten el nombre las columnas de los demas dataframe (infoPowers e infoStats).
+
+---
+
+.center[
+<img src = "figures/dplyr_joins.png", height = "400">]
+
+---
+
+class: center, middle
+
+`r fontawesome::fa("code", height = "3em")`
+# Manipulación de datos
+## Emplear el archivo `Clase4_VieRnesBioinfo_EveliaCoss.R`
+
+Pasos 1 a 6
+
+---
+
+class: center, middle
+
+`r fontawesome::fa("code", height = "3em")`
+# Ejercicios de Manipulación de datos
+## Trabajo en equipo
+
+20 min para terminar todos los ejercicios por equipo
+
+---
+## Ejercicios
+
+1) ¿Cuántos individuos tenemos de cada género (Gender), considerando su raza (Race) y empresa (Publisher)?
+
+2) ¿Cuántos personajes villanos, neutrales y héroes (su bando, Aligment) por cada empresa?
+
+3) ¿Cuántos individuos tenemos de cada género (Gender), considerando su bando (Aligment) y empresa (Publisher)?
+
+---
+
+class: center, middle
+
+`r fontawesome::fa("code", height = "3em")`
+# Manipulación de datos
+## Emplear el archivo `Clase4_VieRnesBioinfo_EveliaCoss.R`
+
+Pasos 7 a 10
+
+---
+
+class: center, middle
+
+`r fontawesome::fa("code", height = "3em")`
+# Ejercicios de Manipulación de datos
+## Trabajo en equipo
+
+20 min para terminar todos los ejercicios por equipo
+
+---
+
+## Ejercicios
+
+1) ¿Quiénes son los personajes más fuertes de cada empresa?
+
+2) ¿Quiénes son los personajes más inteligentes de cada empresa?
+
+3) ¿Quiénes son las mujeres más poderosas y malvadas?
+
+4) ¿Quiénes son los hombres más poderosos y malvados?
+
+---
+
+## Deben practicar mucho cuando aprenden un lenguaje
+
+### Cursos
+
+- Cursos de [Software Carpentry](https://software-carpentry.org/lessons/)
+
+.center[
+<img src = "figures/Cursos_softwareCarpentry.png", height = "400">
+]
+
+---
+
+## Referencias
+
+- [Tidyverse: dplyr y tidyr](http://gauss.inf.um.es:8080/tabular-tidyverse/)
+- [Mutating joins](https://dplyr.tidyverse.org/reference/mutate-joins.html)
+
+---
+## Antes de terminar:
+
+```{r, eval = F}
+save.image(paste0(indir, miAmbiente1.RData))
+```
+
+.scroll-box-14[
+
+```{r}
+sessionInfo()
+```
+
+]
+
+---
+
+class: center, middle
+
+`r fontawesome::fa("code", height = "3em")`
+# Siguiente VieRnes 20 de octubre 2023  
+## El ABC de las funciones y loops en R
+
+Gracias por tu atención, respira y coméntame tus dudas. 
+
