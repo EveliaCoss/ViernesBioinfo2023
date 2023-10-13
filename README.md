@@ -74,7 +74,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Viernes 1. [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1) (22/sep/2023) - Dra. Evelia Coss
 - Viernes 2. [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1) (29/sep/2023) - LCG. Sofia Salazar
 - Viernes 3. [Introducción a R, parte 2](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#31) (06/oct/2023) - LCG. Sofia Salazar
-- Viernes 4. Manipulación de datos con R /(13/oct/2023) - Dra. Evelia Coss
+- Viernes 4. [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/D4_ManipulacionDeDatos.html#1) (13/oct/2023) - Dra. Evelia Coss
 - Viernes 5. El ABC de las funciones y loops en R (20/oct/2023) - Dra. Evelia Coss
 - Viernes 6. Visualización grafica con ggplot2 (27/oct/2023) - Fernanda Miron
 - Viernes 7. Exploracion de datos y eleccion de pruebas o modelos (por confirmar fecha) - Dr. Domingo Matinez
@@ -128,8 +128,8 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Fecha: Viernes 13 de Octubre 2023
 - Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
 - Presentación: 
-  - [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/D4_ManipulacionDeDatos.html#1)
-  - [Rscript](https://eveliacoss.github.io/ViernesBioinfo/Clase4_VieRnesBioinfo_EveliaCoss.R)
+  - [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/D4_ManipulacionDeDatos.html#1)
+  - [Rscript](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/Clase4_VieRnesBioinfo_EveliaCoss.R)
 - Grabación: 
 - Lecturas y cursos recomendados:
 
