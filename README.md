@@ -135,15 +135,17 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
   - [dplyr Github](https://github.com/tidyverse/dplyr)
   - [Keep or drop columns using their names and types](https://dplyr.tidyverse.org/reference/select.html)
 
-### Viernes 5. **Manipulación de datos con R**
+### Viernes 5. El ABC de las funciones y loops en R
 
 - Fecha: Viernes 20 de Octubre 2023
 - Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
 - Presentación: 
   - [El ABC de las funciones y loops en R](https://eveliacoss.github.io/ViernesBioinfo/Clase5_20Oct2023/D5_Loop.html#1)
   - [SquareX_function.R](https://github.com/EveliaCoss/ViernesBioinfo/blob/a7c0738f5ee199d818a252d7b5c7384e5c08f917/Clase5_20Oct2023/squareX_function.R)
-- Grabación: Viernes 5 - En vivo
+- Grabación: [Viernes 5 - En vivo](https://drive.google.com/file/d/1RuFIxtfGjrxD36qow01gKYTl2FoRyHU4/view?usp=sharing)
 - Lecturas y cursos recomendados:
+
+
 
 
 ## Licencia y términos de uso
