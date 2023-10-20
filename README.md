@@ -141,7 +141,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
 - Presentación: 
   - [El ABC de las funciones y loops en R](https://eveliacoss.github.io/ViernesBioinfo/Clase5_20Oct2023/D5_Loop.html#1)
-  - Rscript
+  - [SquareX_function.R](https://github.com/EveliaCoss/ViernesBioinfo/blob/a7c0738f5ee199d818a252d7b5c7384e5c08f917/Clase5_20Oct2023/squareX_function.R)
 - Grabación: Viernes 5 - En vivo
 - Lecturas y cursos recomendados:
 
