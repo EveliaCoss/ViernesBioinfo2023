@@ -64,7 +64,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Ing. Jair Santiago Garcia Sotelo
 - LCG. Sofia Salazar
 - M.C. Ana Hernandez
-- LBT. Fernanda Miron
+- LBT. Fernanda Mirón
 - Jazmin Lopez Chacon
 - Oscar Aldana
 - M.C Alejandra Shafer
@@ -154,7 +154,13 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
   - [Hands-On programming with R](https://rstudio-education.github.io/hopr/loops.html)
   - [How to write Pseudocode: A beginner’s guide](https://medium.com/@ngunyimacharia/how-to-write-pseudocode-a-beginners-guide-29956242698)
 
+### Viernes 6. Visualización grafica con ggplot2
 
+- Fecha: Viernes 27 de Octubre 2023
+- Instructora: LBT. Fernanda Mirón
+- Scripts:
+- Grabación: Viernes 6 - En vivo
+- Lecturas y cursos recomendados:
 
 ## Licencia y términos de uso
 
