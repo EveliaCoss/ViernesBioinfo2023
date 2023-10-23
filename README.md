@@ -144,7 +144,15 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
   - [SquareX_function.R](https://github.com/EveliaCoss/ViernesBioinfo/blob/a7c0738f5ee199d818a252d7b5c7384e5c08f917/Clase5_20Oct2023/squareX_function.R)
 - Grabación: [Viernes 5 - En vivo](https://drive.google.com/file/d/1RuFIxtfGjrxD36qow01gKYTl2FoRyHU4/view?usp=sharing)
 - Lecturas y cursos recomendados:
-
+  - [R para principiantes, Cap 8, Cap 9, Cap 10](https://bookdown.org/jboscomendoza/r-principiantes4/)
+  - [Software Carpentry, funciones](https://swcarpentry-ja.github.io/r-novice-gapminder/es/_episodes/10-functions/index.html)
+  - [Software Carpentry, funciones de apply](https://resbaz.github.io/r-intermediate-gapminder/17-apply.html)
+  - [Software Carpentry, Intermediate programming with R](https://jdblischak.github.io/r-intermediate-altmetrics/23-stopifnot.html)
+  - [Funciones apply, lapply, sapply, tapply, mapply y vapply en R](https://www.diegocalvo.es/funciones-apply-lapply-sapply-tapply-mapply-vapply-en-r/)
+  - [Error handling and assertions in R](https://hohenfeld.is/posts/error-handling-and-assertions-in-r/)
+  - [assertthat](https://www.r-project.org/nosvn/pandoc/assertthat.html#:~:text=assertthat%20provides%20a%20drop%20in,while%20producing%20useful%20error%20messages.)
+  - [Hands-On programming with R](https://rstudio-education.github.io/hopr/loops.html)
+  - [How to write Pseudocode: A beginner’s guide](https://medium.com/@ngunyimacharia/how-to-write-pseudocode-a-beginners-guide-29956242698)
 
 
 
