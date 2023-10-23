@@ -1699,7 +1699,7 @@ left: 6px;
 })(window, document)
 </script>
     <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"d091dc9eb9d944acb9cb60e40bcfa18a","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"e889d6549990474f98f035110dfa13f4","expires":1}</script>
     <script>(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.himalaya = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
@@ -4433,7 +4433,7 @@ for(elemento in objeto) {
 
 Con lo anterior le decimos a R:
 
-- **PARA** cada elemento **EN un objeto** (contador), haz la siguiente operación.
+- **PARA** cada elemento (contador) **EN un objeto**, haz la siguiente operación.
 
 ---
 ## `for` (for loop)
@@ -4464,8 +4464,10 @@ Usar print() sólo mostrará los resultados de las operaciones en la consola, no
 
 ```r
 dado &lt;- 1:6
-mi_vector &lt;- NULL # variable de almacen
+mi_vector &lt;- NULL # variable de almacen, vector vacio
 
+# Cara es el contador, que agarra CADA valor de dado
+# Empezando con 1 hasta el 6, teniendo 6 iteraciones
 for(cara in dado) {
   mi_vector[cara] &lt;- cara ^ 2
 }
@@ -4505,19 +4507,22 @@ La condición generalmente es expresada como el resultado de una o varias operac
 
 
 ```r
+# declarar dos vectores vacios
 conteo &lt;-  0
 valor &lt;- 0
 
 while(valor &lt; 50) {
-  valor &lt;- valor + sample(x = 1:10, size = 1)
+  # Sample va UN valor aleatorio de 1 a 10
+  valor &lt;- valor + sample(x = 1:10, size = 1) 
   conteo &lt;- conteo + 1
 }
 
 valor
-# [1] 53
+# [1] 55
 conteo
-# [1] 7
+# [1] 9
 ```
+El ciclo se va a repetir mientras `valor` sea menos a 50.
 
 ---
 

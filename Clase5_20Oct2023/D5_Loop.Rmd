@@ -414,7 +414,7 @@ for(elemento in objeto) {
 
 Con lo anterior le decimos a R:
 
-- **PARA** cada elemento **EN un objeto** (contador), haz la siguiente operación.
+- **PARA** cada elemento (contador) **EN un objeto**, haz la siguiente operación.
 
 ---
 ## `for` (for loop)
@@ -437,8 +437,10 @@ Usar print() sólo mostrará los resultados de las operaciones en la consola, no
 
 ```{r ejemplo dado v2}
 dado <- 1:6
-mi_vector <- NULL # variable de almacen
+mi_vector <- NULL # variable de almacen, vector vacio
 
+# Cara es el contador, que agarra CADA valor de dado
+# Empezando con 1 hasta el 6, teniendo 6 iteraciones
 for(cara in dado) {
   mi_vector[cara] <- cara ^ 2
 }
@@ -475,17 +477,20 @@ La condición generalmente es expresada como el resultado de una o varias operac
 - Segundo, le sumará 1 a conteo cada que esto ocurra, de esta manera sabremos cuántas iteraciones ocurrieron para llegar a un valor que no sea menor a 50.
 
 ```{r}
+# declarar dos vectores vacios
 conteo <-  0
 valor <- 0
 
 while(valor < 50) {
-  valor <- valor + sample(x = 1:10, size = 1)
+  # Sample va UN valor aleatorio de 1 a 10
+  valor <- valor + sample(x = 1:10, size = 1) 
   conteo <- conteo + 1
 }
 
 valor
 conteo
 ```
+El ciclo se va a repetir mientras `valor` sea menos a 50.
 
 ---
 
