@@ -77,15 +77,20 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Viernes 4. [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/D4_ManipulacionDeDatos.html#1) (13/oct/2023) - Dra. Evelia Coss
 - Viernes 5. [El ABC de las funciones y loops en R](https://eveliacoss.github.io/ViernesBioinfo/Clase5_20Oct2023/D5_Loop.html#1) (20/oct/2023) - Dra. Evelia Coss
 - Viernes 6. Visualización grafica con ggplot2 (27/oct/2023) - Fernanda Mirón Toruño
-- Viernes 7. Exploracion de datos y eleccion de pruebas o modelos (por confirmar fecha) - Dr. Domingo Matinez
-- Viernes 7. Uso del cluster y tus primeros pasos en bash (por confirmar fecha) - Ing. Jair Santiago Garcia Sotelo
-- Sabado. Shiny app (11/nov/2023) - Jazmin Lopez Chacon (10 am - 1pm)
-- Viernes 8. (17/nov/2023) - 
-- Viernes 9. Rmarkdown (24/nov/2023) - M.C Alejandra Shafer 
-- Viernes 10. Llamado de variantes geneticas, parte 1  (1/dic/2023) - M.C. Ana H 
-- Viernes 11. Llamado de variantes geneticas, parte 2  (8/dic/2023) - M.C. Ana H
+- Mini workshop. Análisis de datos de RNA-Seq (6-10/nov/2023) (Es Opcional)
+   - Lunes 6 de nov - 1:30 pm - 3:30 pm
+   - Martes 7 de nov - 11:30 am - 1:30 pm
+   - Miercoles 8 de nov - 9 am - 11 am
+   - Jueves 9 de nov - 9 am - 11 am
+   - Viernes 10 de nov - 9 am - 11 am
+- Sabado. Shiny app (11/nov/2023) - Jazmin Lopez Chacon (10 am - 1pm) 
+- Viernes 7. Rmarkdown (24/nov/2023) - M.C Alejandra Shafer 
+- Viernes 8. Llamado de variantes geneticas, parte 1  (1/dic/2023) - M.C. Ana H 
+- Viernes 9. Llamado de variantes geneticas, parte 2  (8/dic/2023) - M.C. Ana H
 - Sabado. Empleo de REDCap (09/dic/2023) - Oscar Aldana (11 am - 1pm)
-- Viernes 12. (15/dic/2023) -
+- Viernes 10. (15/dic/2023) -
+
+Exploración de datos y elección de pruebas o modelos (por confirmar fecha) - Dr. Domingo Matinez
 
 ### Viernes 1: Conceptos básicos de bioinformática y pseudocódigo 
 
