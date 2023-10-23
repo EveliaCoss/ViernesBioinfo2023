@@ -67,7 +67,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - LBT. Fernanda Mirón Toruño
 - Jazmín López Chacón
 - Oscar Aldana
-- M.C Alejandra Shafer
+- M.C Alejandra Schäfer
 
 ## Contenido 📌
 
@@ -84,7 +84,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
    - Jueves 9 de nov - 9 am - 11 am
    - Viernes 10 de nov - 9 am - 11 am
 - Sabado. Shiny app (11/nov/2023) - Jazmín López Chacón (10 am - 1pm) 
-- Viernes 7. Rmarkdown (24/nov/2023) - M.C Alejandra Shafer 
+- Viernes 7. Rmarkdown (24/nov/2023) - M.C Alejandra Schäfer 
 - Viernes 8. Llamado de variantes geneticas, parte 1  (1/dic/2023) - M.C. Ana H 
 - Viernes 9. Llamado de variantes geneticas, parte 2  (8/dic/2023) - M.C. Ana H
 - Sabado. Empleo de REDCap (09/dic/2023) - Oscar Aldana (11 am - 1pm)
