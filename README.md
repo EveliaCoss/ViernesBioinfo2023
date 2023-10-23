@@ -85,8 +85,8 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
    - Viernes 10 de nov - 9 am - 11 am
 - Sabado. Shiny app (11/nov/2023) - Jazmín López Chacón (10 am - 1pm) 
 - Viernes 7. Rmarkdown (24/nov/2023) - M.C Alejandra Schäfer 
-- Viernes 8. Llamado de variantes geneticas, parte 1  (1/dic/2023) - M.C. Ana H 
-- Viernes 9. Llamado de variantes geneticas, parte 2  (8/dic/2023) - M.C. Ana H
+- Viernes 8. Llamado de variantes genéticas, parte 1  (1/dic/2023) - M.C. Ana H 
+- Viernes 9. Llamado de variantes genéticas, parte 2  (8/dic/2023) - M.C. Ana H
 - Sabado. Empleo de REDCap (09/dic/2023) - Oscar Aldana (11 am - 1pm)
 - Viernes 10. (15/dic/2023) -
 
