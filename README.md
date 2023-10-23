@@ -65,7 +65,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - LCG. Sofia Salazar
 - M.C. Ana Hernandez
 - LBT. Fernanda Mirón Toruño
-- Jazmin Lopez Chacon
+- Jazmín López Chacón
 - Oscar Aldana
 - M.C Alejandra Shafer
 
@@ -83,7 +83,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
    - Miercoles 8 de nov - 9 am - 11 am
    - Jueves 9 de nov - 9 am - 11 am
    - Viernes 10 de nov - 9 am - 11 am
-- Sabado. Shiny app (11/nov/2023) - Jazmin Lopez Chacon (10 am - 1pm) 
+- Sabado. Shiny app (11/nov/2023) - Jazmín López Chacón (10 am - 1pm) 
 - Viernes 7. Rmarkdown (24/nov/2023) - M.C Alejandra Shafer 
 - Viernes 8. Llamado de variantes geneticas, parte 1  (1/dic/2023) - M.C. Ana H 
 - Viernes 9. Llamado de variantes geneticas, parte 2  (8/dic/2023) - M.C. Ana H
