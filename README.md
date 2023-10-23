@@ -64,7 +64,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Ing. Jair Santiago Garcia Sotelo
 - LCG. Sofia Salazar
 - M.C. Ana Hernandez
-- LBT. Fernanda Mirón
+- LBT. Fernanda Mirón Toruño
 - Jazmin Lopez Chacon
 - Oscar Aldana
 - M.C Alejandra Shafer
@@ -76,7 +76,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Viernes 3. [Introducción a R, parte 2](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#31) (06/oct/2023) - LCG. Sofia Salazar
 - Viernes 4. [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/D4_ManipulacionDeDatos.html#1) (13/oct/2023) - Dra. Evelia Coss
 - Viernes 5. [El ABC de las funciones y loops en R](https://eveliacoss.github.io/ViernesBioinfo/Clase5_20Oct2023/D5_Loop.html#1) (20/oct/2023) - Dra. Evelia Coss
-- Viernes 6. Visualización grafica con ggplot2 (27/oct/2023) - Fernanda Miron
+- Viernes 6. Visualización grafica con ggplot2 (27/oct/2023) - Fernanda Mirón Toruño
 - Viernes 7. Exploracion de datos y eleccion de pruebas o modelos (por confirmar fecha) - Dr. Domingo Matinez
 - Viernes 7. Uso del cluster y tus primeros pasos en bash (por confirmar fecha) - Ing. Jair Santiago Garcia Sotelo
 - Sabado. Shiny app (11/nov/2023) - Jazmin Lopez Chacon (10 am - 1pm)
@@ -157,7 +157,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 ### Viernes 6. Visualización grafica con ggplot2
 
 - Fecha: Viernes 27 de Octubre 2023
-- Instructora: LBT. Fernanda Mirón
+- Instructora: LBT. Fernanda Mirón Toruño
 - Scripts:
 - Grabación: Viernes 6 - En vivo
 - Lecturas y cursos recomendados:
