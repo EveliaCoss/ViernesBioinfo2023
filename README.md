@@ -163,7 +163,7 @@ Exploración de datos y elección de pruebas o modelos (por confirmar fecha) - D
 
 - Fecha: Viernes 27 de Octubre 2023
 - Instructora: LBT. Fernanda Mirón Toruño
-- Scripts:
+- Scripts: [boxplot.R](https://github.com/R-Ladies-Morelia/GGplotShiny/blob/main/boxplot.R)
 - Grabación: Viernes 6 - En vivo
 - Lecturas y cursos recomendados:
 
