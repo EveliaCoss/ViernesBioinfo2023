@@ -167,7 +167,7 @@ Exploración de datos y elección de pruebas o modelos (por confirmar fecha) - D
 - Grabación: [Viernes 6 - En vivo](https://drive.google.com/file/d/1H4Ls-9mBhNyTK-0vAs2HXufjGvZ8zvJU/view?usp=sharing)
 - Lecturas y cursos recomendados:
 
-## Sabado. Shiny app
+### Sabado. Shiny app
 
 - Fecha: Viernes 11 de Noviembre 2023
 - Instructora: Jazmín López Chacón
