@@ -167,6 +167,13 @@ Exploración de datos y elección de pruebas o modelos (por confirmar fecha) - D
 - Grabación: [Viernes 6 - En vivo](https://drive.google.com/file/d/1H4Ls-9mBhNyTK-0vAs2HXufjGvZ8zvJU/view?usp=sharing)
 - Lecturas y cursos recomendados:
 
+## Sabado. Shiny app
+
+- Fecha: Viernes 11 de Noviembre 2023
+- Instructora: Jazmín López Chacón
+- [Material](https://github.com/tipicanerd/VieRnesShiny)
+- [Video](https://cinvestav365-my.sharepoint.com/:v:/g/personal/evelia_coss_cinvestav_mx/Eaphdrt9DwNMjiiISesBKioBxc22QPccdFL-Q4oF-slJQQ?e=NZdteZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19)
+
 ## Licencia y términos de uso
 
 El material de los VieRnes de Bioinformatica se distribuye públicamente a través de este repositorio GitHub bajo la [Licencia No Comercial Creative Commons 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
