@@ -84,13 +84,11 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
    - Jueves 9 de nov - 9 am - 11 am
    - Viernes 10 de nov - 9 am - 11 am
 - Sabado. Shiny app (11/nov/2023) - Jazmín López Chacón (10 am - 1pm) 
-- Viernes 7. Rmarkdown (24/nov/2023) - M.C Alejandra Schäfer 
-- Viernes 8. Llamado de variantes genéticas, parte 1  (1/dic/2023) - M.C. Ana H 
-- Viernes 9. Llamado de variantes genéticas, parte 2  (8/dic/2023) - M.C. Ana H
+- Viernes 7. Exploración de datos y elección de pruebas o modelos -S1 (1/dic/2023) - Dr. Domingo Martinez 
+- Viernes 8. Exploración de datos y elección de pruebas o modelos -S2 (8/dic/2023) - Dr. Domingo Martinez
 - Sabado. Empleo de REDCap (09/dic/2023) - Oscar Aldana (11 am - 1pm)
-- Viernes 10. (15/dic/2023) -
+- Viernes 9. Rmarkdown (15/dic/2023) - M.C Alejandra Schäfer
 
-Exploración de datos y elección de pruebas o modelos (por confirmar fecha) - Dr. Domingo Matinez
 
 ### Viernes 1: Conceptos básicos de bioinformática y pseudocódigo 
 
