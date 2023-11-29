@@ -36,6 +36,8 @@ La click en el siguiente link de [Google form](https://forms.gle/12UvZx2sdzPmyYn
 
 Para cualquier duda o problema mandar un correo a la coordinadora del curso, la Dra. Evelia Coss (ecoss@liigh.unam.mx).
 
+Link del calendario de [VieRnes de Bioinfo](https://calendar.google.com/calendar/u/1?cid=MDdmMzVjZTU2MGJiMzg1M2E1MTk5NDUwZTlkOTEwOTM1NTc2ZGYxODVlOGZhNmQyMDAzZmY4OTJhMTkzN2I4MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
+
 ## Entrega de Diplomas
 
 Se otorgará un diploma a los participantes que cuenten con el **80 % de las asistencias** emitido por el LIIGH-UNAM, teniendo como representante a la Dra. Maria Avila.
