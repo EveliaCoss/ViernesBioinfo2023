@@ -1,0 +1,28 @@
+---
+title: "Exploración de datos y elección de pruebas o modelos"
+author: "Domingo Martínez"
+date: "2023-11-22"
+# El ouput controla los parámetros de salida del renderizado
+output:                                   
+  html_document:                   
+    collapsed: true                # Contraer celdas de salida
+    code_folding: show             # Mostrar el código
+    toc: true                      # Mostrar la tabla de contenidos
+    toc_depth: 3                   # Niveles de títulos que se mostrarán
+    toc_float: true                # Índices o contenidos flotantes 
+    smooth_scroll: true            # Activar el scroll
+    highlight: tango               # Destacar
+    df_print: paged                # Mostrar los dataframes en páginas
+    number_sections: true          # Numeración de contenidos
+    theme: flatly               # Tema
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(emojifont)
+```
+<p align="justify">
+
+</p>
+
+
