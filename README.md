@@ -174,6 +174,10 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - [Material](https://github.com/tipicanerd/VieRnesShiny)
 - [Video](https://cinvestav365-my.sharepoint.com/:v:/g/personal/evelia_coss_cinvestav_mx/Eaphdrt9DwNMjiiISesBKioBxc22QPccdFL-Q4oF-slJQQ?e=NZdteZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19)
 
+## Viernes 7. Exploración de datos y elección de pruebas o modelos
+
+- Material clase del 7 y 8 de Diciembre - [Carpeta](https://github.com/EveliaCoss/ViernesBioinfo/tree/main/Clase_7_y_8_Diciembre_1_y_8
+
 ## Licencia y términos de uso
 
 El material de los VieRnes de Bioinformatica se distribuye públicamente a través de este repositorio GitHub bajo la [Licencia No Comercial Creative Commons 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
