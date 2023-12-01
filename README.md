@@ -176,7 +176,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 ## Viernes 7. Exploración de datos y elección de pruebas o modelos
 
-- Material clase del 7 y 8 de Diciembre - [Carpeta](https://github.com/EveliaCoss/ViernesBioinfo/tree/main/Clase_7_y_8_Diciembre_1_y_8
+- [Material clase del 7 y 8 de Diciembre](https://github.com/EveliaCoss/ViernesBioinfo/tree/main/Clase_7_y_8_Diciembre_1_y_8
 
 ## Licencia y términos de uso
 
