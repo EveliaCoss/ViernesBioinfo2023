@@ -61,14 +61,14 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 ## Instructores 👾 
 
-- Dra. Evelia Coss
-- Dr. Domingo Matinez
+- Dra. Evelia Lorena Coss Navarrete
+- Dr. Luis Domingo Martínez Vázquez
 - Ing. Jair Santiago Garcia Sotelo
-- LCG. Sofia Salazar
+- LCG. Sofia Guadalupe Salazar Magaña
 - M.C. Ana Hernandez
 - LBT. Fernanda Mirón Toruño
 - Jazmín López Chacón
-- Oscar Aldana
+- Oscar Aldana Assad
 - M.C Alejandra Schäfer
 
 ## Contenido 📌
