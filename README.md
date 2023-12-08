@@ -174,11 +174,11 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - [Material](https://github.com/tipicanerd/VieRnesShiny)
 - [Video](https://cinvestav365-my.sharepoint.com/:v:/g/personal/evelia_coss_cinvestav_mx/Eaphdrt9DwNMjiiISesBKioBxc22QPccdFL-Q4oF-slJQQ?e=NZdteZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19)
 
-## Viernes 7. Exploración de datos y elección de pruebas o modelos
+### Viernes 7 y 8. Exploración de datos y elección de pruebas o modelos
 
 - [Material clase del 7 y 8 de Diciembre](https://github.com/EveliaCoss/ViernesBioinfo/tree/main/Clase_7_y_8_Diciembre_1_y_8)
-- [Presentacion](https://eveliacoss.github.io/ViernesBioinfo/Clase_7_y_8_Diciembre_1_y_8/Exploracion_de_datos_y_eleccion_de_pruebas_o_modelos_1.1.html)
-- [Grabacion](https://drive.google.com/file/d/1Fw78mI3ZmGdfB3OY2tkHP5WsasTjijbo/view?usp=sharing)
+- Presentación: [Clase 7](https://eveliacoss.github.io/ViernesBioinfo/Clase_7_y_8_Diciembre_1_y_8/Exploracion_de_datos_y_eleccion_de_pruebas_o_modelos_1.1.html)
+- Grabación: [Viernes 7](https://drive.google.com/file/d/1Fw78mI3ZmGdfB3OY2tkHP5WsasTjijbo/view?usp=sharing)
 
 ## Licencia y términos de uso
 
