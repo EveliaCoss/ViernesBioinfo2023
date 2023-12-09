@@ -63,34 +63,29 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 - Dra. Evelia Lorena Coss Navarrete
 - Dr. Luis Domingo Martínez Vázquez
-- Ing. Jair Santiago Garcia Sotelo
 - LCG. Sofia Guadalupe Salazar Magaña
-- M.C. Ana Hernandez
 - LBT. Fernanda Mirón Toruño
 - Jazmín López Chacón
 - Oscar Aldana Assad
-- M.C Alejandra Schäfer
 
 ## Contenido 📌
 
-- Viernes 1. [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1) (22/sep/2023) - Dra. Evelia Coss
-- Viernes 2. [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1) (29/sep/2023) - LCG. Sofia Salazar
-- Viernes 3. [Introducción a R, parte 2](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#31) (06/oct/2023) - LCG. Sofia Salazar
-- Viernes 4. [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/D4_ManipulacionDeDatos.html#1) (13/oct/2023) - Dra. Evelia Coss
-- Viernes 5. [El ABC de las funciones y loops en R](https://eveliacoss.github.io/ViernesBioinfo/Clase5_20Oct2023/D5_Loop.html#1) (20/oct/2023) - Dra. Evelia Coss
-- Viernes 6. Visualización grafica con ggplot2 (27/oct/2023) - Fernanda Mirón Toruño
-- Mini workshop. Análisis de datos de RNA-Seq (6-10/nov/2023) (Es Opcional)
+- Viernes 1. [Conceptos básicos de bioinformática y pseudocódigo](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#viernes-1-conceptos-b%C3%A1sicos-de-bioinform%C3%A1tica-y-pseudoc%C3%B3digo) (22/sep/2023) - Dra. Evelia Coss
+- Viernes 2. [Introducción a R, parte 1](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#viernes-2-introducci%C3%B3n-a-r-parte-1) (29/sep/2023) - LCG. Sofia Salazar
+- Viernes 3. [Introducción a R, parte 2](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#viernes-3-introducci%C3%B3n-a-r-parte-2) (06/oct/2023) - LCG. Sofia Salazar
+- Viernes 4. [Manipulación de datos con R](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#viernes-4-manipulaci%C3%B3n-de-datos-con-r) (13/oct/2023) - Dra. Evelia Coss
+- Viernes 5. [El ABC de las funciones y loops en R](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#viernes-5-el-abc-de-las-funciones-y-loops-en-r) (20/oct/2023) - Dra. Evelia Coss
+- Viernes 6. [Visualización grafica con ggplot2](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#viernes-6-visualizaci%C3%B3n-grafica-con-ggplot2) (27/oct/2023) - Fernanda Mirón Toruño
+- Mini [Workshop. Análisis de datos de RNA-Seq](https://github.com/EveliaCoss/RNASeq_Workshop_Nov2023) (6-10/nov/2023) (Es Opcional)
    - Lunes 6 de nov - 1:30 pm - 3:30 pm
    - Martes 7 de nov - 11:30 am - 1:30 pm
    - Miercoles 8 de nov - 9 am - 11 am
    - Jueves 9 de nov - 9 am - 11 am
    - Viernes 10 de nov - 9 am - 11 am
-- Sabado. Shiny app (11/nov/2023) - Jazmín López Chacón (10 am - 1pm) 
-- Viernes 7. Exploración de datos y elección de pruebas o modelos -S1 (1/dic/2023) - Dr. Domingo Martinez 
-- Viernes 8. Exploración de datos y elección de pruebas o modelos -S2 (8/dic/2023) - Dr. Domingo Martinez
-- Sabado. Empleo de REDCap (09/dic/2023) - Oscar Aldana (11 am - 1pm)
-- Viernes 9. Rmarkdown (15/dic/2023) - M.C Alejandra Schäfer
-
+- Sábado. [Shiny app](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#sabado-shiny-app) (11/nov/2023) - Jazmín López Chacón (10 am - 1pm) 
+- Viernes 7. [Exploración de datos y elección de pruebas o modelos -S1](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#viernes-7-y-8-exploraci%C3%B3n-de-datos-y-elecci%C3%B3n-de-pruebas-o-modelos) (1/dic/2023) - Dr. Domingo Martinez 
+- Viernes 8. [Exploración de datos y elección de pruebas o modelos -S2](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#viernes-7-y-8-exploraci%C3%B3n-de-datos-y-elecci%C3%B3n-de-pruebas-o-modelos) (8/dic/2023) - Dr. Domingo Martinez
+- Sábado. [Empleo de REDCap](https://github.com/EveliaCoss/ViernesBioinfo/blob/main/README.md#sabado-redcap) (09/dic/2023) - Oscar Aldana (11 am - 1pm)
 
 ### Viernes 1: Conceptos básicos de bioinformática y pseudocódigo 
 
@@ -162,17 +157,17 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 ### Viernes 6. Visualización grafica con ggplot2
 
 - Fecha: Viernes 27 de Octubre 2023
-- Instructora: LBT. Fernanda Mirón Toruño
+- Instructora: Fernanda Mirón Toruño
 - Scripts: [boxplot.R](https://github.com/R-Ladies-Morelia/GGplotShiny/blob/main/boxplot.R)
 - Grabación: [Viernes 6 - En vivo](https://drive.google.com/file/d/1H4Ls-9mBhNyTK-0vAs2HXufjGvZ8zvJU/view?usp=sharing)
 - Lecturas y cursos recomendados:
 
-### Sabado. Shiny app
+### Sábado. Shiny app
 
 - Fecha: Viernes 11 de Noviembre 2023
 - Instructora: Jazmín López Chacón
-- [Material](https://github.com/tipicanerd/VieRnesShiny)
-- [Video](https://cinvestav365-my.sharepoint.com/:v:/g/personal/evelia_coss_cinvestav_mx/Eaphdrt9DwNMjiiISesBKioBxc22QPccdFL-Q4oF-slJQQ?e=NZdteZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19)
+- Material: [Github - VieRnesShiny](https://github.com/tipicanerd/VieRnesShiny)
+- Grabación: [Video - En vivo](https://cinvestav365-my.sharepoint.com/:v:/g/personal/evelia_coss_cinvestav_mx/Eaphdrt9DwNMjiiISesBKioBxc22QPccdFL-Q4oF-slJQQ?e=NZdteZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19)
 
 ### Viernes 7 y 8. Exploración de datos y elección de pruebas o modelos
 
@@ -182,7 +177,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
   - [Viernes 7](https://drive.google.com/file/d/1Fw78mI3ZmGdfB3OY2tkHP5WsasTjijbo/view?usp=sharing)
   - [Viernes 8](https://drive.google.com/file/d/1ancKow1kyfQ22vtgB8ET2TBkeCMB4EFQ/view?usp=sharing)
 
-### Sabado. REDCap
+### Sábado. REDCap
 - Grabación: [Sabado 9](https://drive.google.com/file/d/1FE0pudxkPItMTjLVsS62AuMv4S34YBn6/view?usp=sharing)
 
 ## Licencia y términos de uso
