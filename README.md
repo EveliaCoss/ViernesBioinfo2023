@@ -61,12 +61,12 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 ## Instructores 👾 
 
-- Dra. Evelia Lorena Coss Navarrete
-- Dr. Luis Domingo Martínez Vázquez
+- Dra. Evelia Lorena Coss Navarrete (ecossnav@gmail.com)
+- Dr. Luis Domingo Martínez Vázquez (ldmv82@gmail.com)
 - LCG. Sofia Guadalupe Salazar Magaña
 - LBT. Fernanda Mirón Toruño
 - Jazmín López Chacón
-- Oscar Aldana Assad
+- Oscar Aldana Assad (oscaraldanaassad@gmail.com)
 
 ## Contenido 📌
 
