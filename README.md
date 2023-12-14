@@ -178,7 +178,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
   - [Viernes 8](https://drive.google.com/file/d/1ancKow1kyfQ22vtgB8ET2TBkeCMB4EFQ/view?usp=sharing)
 
 ### Sábado. REDCap
-- Grabación: [Sabado 9](https://drive.google.com/file/d/1FE0pudxkPItMTjLVsS62AuMv4S34YBn6/view?usp=sharing)
+- Grabación: Por solicitud personal, por datos sensibles
 
 ## Licencia y términos de uso
 
