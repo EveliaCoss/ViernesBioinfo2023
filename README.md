@@ -167,7 +167,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Fecha: Viernes 11 de Noviembre 2023
 - Instructora: Jazmín López Chacón
 - Material: [Github - VieRnesShiny](https://github.com/tipicanerd/VieRnesShiny)
-- Grabación: [Video - En vivo]()
+- Grabación: [Video - En vivo](https://drive.google.com/file/d/12KO_IoW4H0t9qeNaCdfA6CveQIe5mMUt/view?usp=sharing)
 
 ### Viernes 7 y 8. Exploración de datos y elección de pruebas o modelos
 
