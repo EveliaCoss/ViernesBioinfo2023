@@ -167,7 +167,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Fecha: Viernes 11 de Noviembre 2023
 - Instructora: Jazmín López Chacón
 - Material: [Github - VieRnesShiny](https://github.com/tipicanerd/VieRnesShiny)
-- Grabación: [Video - En vivo](https://cinvestav365-my.sharepoint.com/:v:/g/personal/evelia_coss_cinvestav_mx/Eaphdrt9DwNMjiiISesBKioBxc22QPccdFL-Q4oF-slJQQ?e=NZdteZ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19)
+- Grabación: [Video - En vivo]()
 
 ### Viernes 7 y 8. Exploración de datos y elección de pruebas o modelos
 
