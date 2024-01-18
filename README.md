@@ -91,7 +91,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 - Fecha: Viernes 22 de Septiembre 2023
 - Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
-- Presentación: [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo/Clase1_22Sep2023/D1_Introduccion_slides.html#1)
+- Presentación: [Conceptos básicos de bioinformática y pseudocódigo](https://eveliacoss.github.io/ViernesBioinfo2023/Clase1_22Sep2023/D1_Introduccion_slides.html#1)
 - Grabación: [Viernes 1](https://drive.google.com/file/d/1SO6EJuKUXQzeIgL95unQ4d_TMo1gP1Jf/view?usp=sharing)
 - Lecturas y cursos recomendados:
   - [Summer R 2015](https://aejaffe.com/summerR_2015/)
@@ -104,7 +104,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 - Fecha: Viernes 29 de Septiembre 2023
 - Instructora: [LCG. Sofia Salazar](https://github.com/SophSM)
-- Presentación: [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#1)
+- Presentación: [Introducción a R, parte 1](https://eveliacoss.github.io/ViernesBioinfo2023/Clase2_introR_29sep/diapos.html#1)
 - Grabación:
     - [Viernes 2- En vivo Clase](https://drive.google.com/file/d/1BKA--h-Pssc64Kr3SKoGAD6b_KgGq78V/view?usp=sharing)
     - [Video de Sofi](https://drive.google.com/file/d/1apAC433KI4AKjjC2cV9_XiRDifOq2thJ/view?usp=sharing)
@@ -116,7 +116,7 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 - Fecha: Viernes 6 de Octubre 2023
 - Instructora: [LCG. Sofia Salazar](https://github.com/SophSM)
-- Presentación: [Introducción a R, parte 2](https://eveliacoss.github.io/ViernesBioinfo/Clase2_introR_29sep/diapos.html#31)
+- Presentación: [Introducción a R, parte 2](https://eveliacoss.github.io/ViernesBioinfo2023/Clase2_introR_29sep/diapos.html#31)
 - Grabación: [Viernes 3](https://drive.google.com/file/d/1GI3hhtlWCGpatmtBdKrMiTwGzcYAcd5U/view?usp=sharing)
 - Lecturas y cursos recomendados:
   - [R for dummies](https://drive.google.com/file/d/1qgmGVEFd93qyISIPNkuZU-iQArG-YyhQ/view?usp=sharing)
@@ -128,8 +128,8 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Fecha: Viernes 13 de Octubre 2023
 - Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
 - Presentación: 
-  - [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/D4_ManipulacionDeDatos.html#1)
-  - [Rscript](https://eveliacoss.github.io/ViernesBioinfo/Clase4_13Oct2023/Clase4_VieRnesBioinfo_EveliaCoss.R)
+  - [Manipulación de datos con R](https://eveliacoss.github.io/ViernesBioinfo2023/Clase4_13Oct2023/D4_ManipulacionDeDatos.html#1)
+  - [Rscript](https://eveliacoss.github.io/ViernesBioinfo2023/Clase4_13Oct2023/Clase4_VieRnesBioinfo_EveliaCoss.R)
 - Grabación: [Viernes 4 - En vivo](https://drive.google.com/file/d/1xA9E2h-Q1USZnjPSkixJoOooDOY-mNfd/view?usp=sharing)
 - Lecturas y cursos recomendados:
   - [dplyr Github](https://github.com/tidyverse/dplyr)
@@ -140,8 +140,8 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 - Fecha: Viernes 20 de Octubre 2023
 - Instructora: [Dra. Evelia Coss](https://eveliacoss.github.io/)
 - Presentación: 
-  - [El ABC de las funciones y loops en R](https://eveliacoss.github.io/ViernesBioinfo/Clase5_20Oct2023/D5_Loop.html#1)
-  - [SquareX_function.R](https://github.com/EveliaCoss/ViernesBioinfo/blob/a7c0738f5ee199d818a252d7b5c7384e5c08f917/Clase5_20Oct2023/squareX_function.R)
+  - [El ABC de las funciones y loops en R](https://eveliacoss.github.io/ViernesBioinfo2023/Clase5_20Oct2023/D5_Loop.html#1)
+  - [SquareX_function.R](https://github.com/EveliaCoss/ViernesBioinfo2023/blob/a7c0738f5ee199d818a252d7b5c7384e5c08f917/Clase5_20Oct2023/squareX_function.R)
 - Grabación: [Viernes 5 - En vivo](https://drive.google.com/file/d/1RuFIxtfGjrxD36qow01gKYTl2FoRyHU4/view?usp=sharing)
 - Lecturas y cursos recomendados:
   - [R para principiantes, Cap 8, Cap 9, Cap 10](https://bookdown.org/jboscomendoza/r-principiantes4/)
@@ -171,8 +171,8 @@ Se les solicita a los participantes respetar las **reglas y código de conducta 
 
 ### Viernes 7 y 8. Exploración de datos y elección de pruebas o modelos
 
-- [Material clase del 7 y 8 de Diciembre](https://github.com/EveliaCoss/ViernesBioinfo/tree/main/Clase_7_y_8_Diciembre_1_y_8)
-- Presentación: [Clase 7](https://eveliacoss.github.io/ViernesBioinfo/Clase_7_y_8_Diciembre_1_y_8/Exploracion_de_datos_y_eleccion_de_pruebas_o_modelos_1.1.html)
+- [Material clase del 7 y 8 de Diciembre](https://github.com/EveliaCoss/ViernesBioinfo2023/tree/main/Clase_7_y_8_Diciembre_1_y_8)
+- Presentación: [Clase 7](https://eveliacoss.github.io/ViernesBioinfo2023/Clase_7_y_8_Diciembre_1_y_8/Exploracion_de_datos_y_eleccion_de_pruebas_o_modelos_1.1.html)
 - Grabación:
   - [Viernes 7](https://drive.google.com/file/d/1Fw78mI3ZmGdfB3OY2tkHP5WsasTjijbo/view?usp=sharing)
   - [Viernes 8](https://drive.google.com/file/d/1ancKow1kyfQ22vtgB8ET2TBkeCMB4EFQ/view?usp=sharing)
